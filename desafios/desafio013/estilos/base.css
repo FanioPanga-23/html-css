@@ -14,24 +14,50 @@ body{
 }
 
 main{
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
 
 section#iphone{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 310px;
     height: 628px;
     background: url(../imagens/frame-iphone.png) no-repeat;
+    background-attachment: fixed;
 }
 
 iframe{
     position: relative;
     top: 80px;
-    left: 22px;
-    width: 267px;
+    left: 21px;
+    width: 269px;
+    height: 472px;
+}
+
+section#links{
+  text-align: right;
+}
+
+section#links img{
+    width: 60px;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 4px 5px 6px #0000006c;
+    box-sizing: border-box;
+}
+
+section#links img:hover{
+    border: 2px solid #fff;
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px 5px #00000070;
+    transition: transform 0.3s, border 0.2s;
+}
+
+section#links img:active{
+    transform: scale(94%);
+    box-shadow: 6px 6px 8px #00000075;
 }
