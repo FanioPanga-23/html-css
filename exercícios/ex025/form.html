@@ -12,13 +12,13 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" autocomplete="on" method="post">
         <p>
             <label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome">
+            <input type="text" name="nome" id="inome" autocomplete="name" required>
         </p>
         <p>
-            <label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome">
+            <label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome" required minlength="5" autocomplete="cc-family-name">
         </p>
         <p>
             <input type="submit" value="Cadastrar">
