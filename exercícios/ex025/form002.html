@@ -6,20 +6,22 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Teste de Formulários</h1>
-    <form action="cadastro.php" method="post">
-        <p>
-            <label for="iuser">Usuário:</label>
-            <input type="text" name="user" id="iuser" required autocomplete="username">
-        </p>
-        <p>
-            <label for="ipass">Senha:</label>
-            <input type="password" name="senha" id="ipass" requerid autocomplete="current-password">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Eliminar">
-        </p>
-    </form>
+    <h1>Teste de formulário</h1>
+    <div id="form">
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="user">Usuário:</label>
+                <input type="text" name="user" id="user" required autocomplete="username" placeholder="Nome de usuário">
+            </p>
+            <p>
+                <label for="pass">Senha:</label>
+                <input type="password" name="pass" id="pass" required autocomplete="new-password" minlength="6" placeholder="Inserir senha"> 
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Eliminar">
+            </p>
+        </form>
+    </div>
 </body>
 </html>
