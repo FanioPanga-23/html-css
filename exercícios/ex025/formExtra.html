@@ -8,57 +8,42 @@
 <body>
     <form action="cadastro.php" method="post">
         <p>
-            <label for="tel">Telefone:</label>
-            <input type="tel" name="telefone" id="tel" required placeholder="(xxx) xxx-xxx-xxx" pattern="\([0-9]{3}\)([\s])[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            <label for="ifone">Telefone:</label>
+            <input type="tel" name="fone" id="ifone" required autocomplete="tel" placeholder="(xxx) xxx-xxx-xxx" pattern="\([0-9]{3}\)([\s])[0-9]{3}-[0-9]{3}-[0-9]{3}">
         </p>
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-        <p>
-            <label for="modelo">Modelo do celular:</label>
-            <select name="modelo" id="modelo">
-                <option value="">Escolha um...</option>
-                <optgroup label="Aple">
-                    <option value="AIP6">iPhone 6</option>
-                    <option value="AIP6S">iPhone 6S</option>
-                    <option value="AIP6+">iPhone 6 Plus</option>
-                    <option value="AIP7">iPhone 7</option>
-                    <option value="AIP7S">iPhone 7S</option>
-                    <option value="AIP7+">iPhone 7 Plus</option>
+            <label for="modCel">Modelo do celular:</label>
+            <select name="modelos" id="modCel">
+                <option value="" >Escolha um modelo...</option>
+                <optgroup label="APLE">
+                    <option value="IPH6">iPhone 6</option>
+                    <option value="IPH7">iPhone 7</option>
+                    <option value="IPH8">iPhone 8</option>
                 </optgroup>
-                <optgroup label="samsung">
-                    <option value="SAMA11">Samsung Galxy A11</option>
-                    <option value="SAMA50">Samsung Galaxy A50</option>
-                    <option value="SAM22S">Samsung Galay 22S</option>
+                <optgroup label="SAMSUNG">
+                    <option value="SGA10">Samsung Galaxy A10</option>
+                    <option value="SGA20">Samsung Galaxy A20</option>
+                    <option value="SGS22U">Samsung S22 Ultra</option>
                 </optgroup>
             </select>
         </p>
         <p>
-            <label for="esp">Especificações técnicas:</label>
+            <label for="espT">Especificações técnicas:</label><br>
+            <textarea name="espT" id="espT" cols="30" rows="10" placeholder="Descreva aqui as especificações técnicas desejadas..."></textarea>
         </p>
-        <P>
-            <TEXTarea name="esp" id="esp" placeholder="Descreve aqui as especificações" cols="40" rows="10">
-            </TEXTarea>
-        </P>
         <p>
             <label for="iprof">Profissão:</label>
-            <input type="text" name="prof" id="iprof" list="p">
-            <datalist id="p">
-                <optgroup label="engenharia">
-                    <option value="DEV">Programador</option>
-                    <option value="ENGS">Engenheiro de Software</option>
-                </optgroup>
-                <optgroup label="design">
-                    <option value="DG">Designer Gráfico</option>
-                    <option value="A">Animador</option>
-                    <option value="Fotógrafo">Fotógrafo</option>
-                </optgroup>
-                <optgroup label="mede">
-                    <option value="PROH">Professor de História</option>
-                    <option value="PROG">Professor de Geografia</option>
-                </optgroup>
-            </datalist>
+            <input type="text" name="proft" id="iprof" list="dlist">
+                <datalist id="dlist">
+                    <optgroup label="ENGENHARIA">
+                        <option value="DEV">Programador</option>
+                        <option value="ENSOFT">Engenheiro de Software</option>
+                    </optgroup>
+                    <optgroup label="ARTE GRAFICA">
+                        <option value="DGRAF">Designner Gráfico</option>
+                        <option value="AN">Animador</option>
+                    </optgroup>
+                </datalist>
         </p>
         <p>
             <input type="submit" value="Enviar">
