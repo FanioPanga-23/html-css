@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo 2</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .caixas{
+            width: 90%;
+            height: 400px;
+            border: 1px solid #000;
+            background-color: lightgray;
+        }
+
+        #repeat{
+            background-image: url('imagens/pattern001.png');
+            background-repeat: repeat;
+        }
+
+        #repeat-x{
+            background-image: url('imagens/pattern002.png');
+            background-repeat: repeat-x;
+        }
+
+        #repeat-y{
+            background-image: url('imagens/pattern003.png');
+            background-repeat: repeat-y;
+        }
+
+        #no-repeat{
+            background-image: url('imagens/pattern004.png');
+            background-repeat: no-repeat;
+        }
+
+        h1{
+            font-size: 2.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Repetições em Background-image</h1>
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
+    <div class="caixas" id="repeat">
+
+    </div>
+
+    <h2>background-repeat: repeat-x;</h2>
+    <p>Repete a imagem tanto no eixo horizontal.</p>
+    <div class="caixas" id="repeat-x">
+
+    </div>
+
+    <h2>background-repeat: repeat-y;</h2>
+    <p>Repete a imagem tanto no eixo vertical.</p>
+    <div class="caixas" id="repeat-y">
+
+    </div>
+
+    <h2>background-repeat: no-repeat;</h2>
+    <p>Não repete a imagem em nem um eixo.</p>
+    <div class="caixas" id="no-repeat">
+
+    </div>
+</body>
+</html>

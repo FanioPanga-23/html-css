@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Tabelas</title>
+    <style>
+    body,html{
+        font-family: Arial, Helvetica, sans-serif;    
+    }
+
+        table{
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        thead{
+            background-color: #808080;
+            color: #fff;
+        }
+
+       th{
+        border: 1px solid #000;
+        padding: 10px;
+        border-collapse: collapse;
+       }
+
+       td{
+        border-collapse: collapse;
+        border: 1px solid #000;
+        padding: 5px;
+        text-align: left;
+       }
+
+       .numero{
+        text-align: right;
+       }
+
+       .pos{
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <h1>Lista</h1>
+    <hr>
+
+    <table>
+        <thead>
+                <th>
+                    Posição
+                </th>
+                <th>
+                    Unidade federativa
+                </th>
+                <th>
+                    População
+                </th>
+                <th>
+                    País comparável
+                </th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="pos">
+                    1
+                </td>
+                <td>
+                    São Paulo
+                </td>
+                <td class="numero">
+                    45 919 049
+                </td>
+                <td>
+                    Espanha (46 439 864)
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    2
+                </td>
+                <td>
+                    Minas Gerais
+                </td>
+                <td class="numero">
+                    21 168 791
+                </td>
+                <td>
+                    Srt Lani (20 675 000)
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    3
+                </td>
+                <td>
+                    Rio de Janeiro
+                </td>
+                <td class="numero">
+                    17 264 943
+                </td>
+                <td>
+                    Países Baixos (16 922 900)
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    4
+                </td>
+                <td>
+                    Bahia
+                </td>
+                <td class="numero">
+                    14 873 064
+                </td>
+                <td>
+                    Chade (14 037 000)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>
+        Por região
+    </h2>
+    <hr>
+    
+
+    <table>
+        <thead>
+            <th>
+                Posição
+            </th>
+            <th>
+                Região
+            </th>
+            <th>
+                População
+            </th>
+            <th>
+                País comparável (habitantes)
+            </th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="pos">
+                    1
+                </td>
+                <td>
+                    Região Sudeste
+                </td>
+                <td class="numero">
+                    88 371 433
+                </td>
+                <td>
+                    República Democrática do Congo (86 790 567)
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    2
+                </td>
+                <td>
+                    Região Nordeste
+                </td>
+                <td class="numero">
+                    57 071 654
+                </td>
+                <td>
+                    África do Sul (58 775 022)
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    3
+                </td>
+                <td>
+                    Região Sul
+                </td>
+                <td class="numero">
+                    29 975 984
+                </td>
+                <td>
+                    Nepal (29 609 623)
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    4
+                </td>
+                <td>
+                    Região Norte
+                </td>
+                <td class="numero">
+                    18 430 980
+                </td>
+                <td>
+                    Cazaquistão (18 574 680)
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    5
+                </td>
+                <td>
+                    Região Centro-Oeste
+                </td>
+                <td class="numero">
+                    16 297 074
+                </td>
+                <td>
+                    Senegal (16 209 125)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Poetsen';
+    src: url('../fontes/poetsen_one/PoetsenOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #F1F6EC;
+}
+
+header{
+    height: 150px;
+    padding: 5px;
+    background-color: #6B5CA5;
+}
+
+header > h1{
+    color: #ECC30B;
+    text-align: center;
+    padding: 30px;
+    font: normal bolder 3em 'Poetsen', arial, helvetica, verdana, sans-serif;
+    text-shadow: 2px 2px 5px #ecc30b69;
+}
+
+nav{
+    background-color: #6B5CA5;
+    padding: 20px;
+}
+
+nav a{
+    color: #ECC30B;
+    padding: 5px;
+    text-decoration: none;
+    font: normal normal 1.3em 'Poetsen';
+}
+
+nav a:hover{
+    color: #1e3e68;
+    background-color: #ECC30B;
+    border: 10px solid #ECC30B;
+    font: normal bold 1em 'Poetsen';
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px #00000057;
+    transition-duration: 0.5s;
+}
+
+main{
+    background-color: #F1FFE7;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+footer{
+    background-color: #0C1713;
+    color: #d8f7e3;
+    padding: 10px;
+    height: 100px;
+}
+
+footer >p{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font: normal normal 1em 'Poetsen';
+}

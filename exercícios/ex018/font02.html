@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /*
+            Formatos de fontes 
+                -truetype(ttf)
+                -opentype(otf)
+                -embedde-opentype
+                -truetype-aat(Apple advanced tupography)
+                -svg
+
+        */
+        @font-face {
+            font-family: 'True-Destaque';
+            src: url(fontes/sans_serif_shaded/SansSerifShaded.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Gaming';
+            src: url(fontes/retrogaming/RetroGaming.ttf) format('truetype');
+            @font-face {
+                font-family: 'Rific';
+                src: url(fontes/sanserifffic/Sanseriffic.otf) format('opentype');
+            }
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+        }
+        h1{
+            font-family: 'True-Destaque';
+            font-size: 3em;
+        }
+        h2{
+            font-family: 'Gaming';
+            font-size: 2em;
+        }
+        p{
+            font-family: 'Rific';
+        }
+    </style>
+</head>
+<body>
+    <h1>Títulos</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Consequatur exercitationem itaque eius 
+        modi adipisci quas enim alias illum magni vitae. 
+        Mollitia possimus nisi iusto animi. Eos 
+        voluptas recusandae nostrum quis! 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Non quidem necessitatibus dignissimos quaerat 
+        consequatur esse sunt sed voluptas? Nihil, voluptas 
+        reiciendis quas perspiciatis non 
+        temporibus quo culpa vitae laborum distinctio? <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cum eaque ipsum 
+        minima aspernatur laborum minus quas esse? 
+        Necessitatibus odit delectus tempora, 
+        dicta ad amet dolore earum aperiam dolor. Odio, vero?
+    </p>
+    <h2>Exemplos "Gaming"</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Earum quaerat debitis laudantium? Nemo, alias 
+         veniam quae ex explicabo autem error sequi illum reiciendis 
+        vero dolores officia dolorum a rem repellat.
+        Lorem ipsum, dolor sit amet consectetur adipisicing
+         elit. Minima omnis, sunt est illo, assumenda
+          ipsa mollitia ducimus vel iure iste eius
+           impedit sed expedita 
+        architecto, ad modi harum sapiente aspernatur? <br> 
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Consectetur nostrum error 
+        cupiditate aliquid nesciunt est fugiat, voluptate 
+        officia ab quidem eos inventore veritatis, atque,
+         tempora neque ut unde. Sapiente, suscipit.
+    </p>
+</body>
+</html>

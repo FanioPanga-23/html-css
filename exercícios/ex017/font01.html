@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        main{
+            background-color: aliceblue;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 5px 5px 6px #22577a9a;
+        }
+        body{
+            background-image: linear-gradient(90deg, #33a1fd,#22577a 100%);
+            font-family: Arial, Helvetica, sans-serif;
+
+            /*
+                Medidas Absolutas
+                    cm, mm, ip(Polegada), px, pt, pc
+
+                Medidas Relativas
+                  em(altura M), ex(altura x), rem, vw, vh, %  
+            */
+        }
+        h1,h2{
+            font: oblique lighter 2.8em 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+   <main>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit.
+        Quaerat ducimus ipsam nulla,
+        quidem tempore quod quibusdam,
+        asperiores neque at excepturi
+        consequuntur accusamus.
+        Praesentium itaque assumenda 
+        quae quasi qui, voluptatem incidunt. <br>Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. Dicta ipsam impedit incidunt eaque possimus 
+        aliquid asperiores dolor ducimus aperiam suscipit. 
+        Facere dolore tempora nulla eius vero, dicta fuga quae repudiandae?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum id, 
+        ab facere ad molestias, cum iste ipsa ullam dolores a nemo odio 
+        voluptatum optio reiciendis delectus quibusdam et corporis minima.
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Repudiandae dicta aspernatur impedit blanditiis
+        commodi voluptate fuga doloremque, vero
+        nam totam quam maxime minima praesentium? Dolores, 
+        voluptate. Voluptates illo temporibus quae? Lorem 
+        ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis,
+        magni eaque magnam ab eum repudiandae voluptas 
+        necessitatibus voluptatem cupiditate numquam modi temporibus 
+        atque quo saepe asperiores id rem alias ipsum?
+    </p>
+   </main>
+    <p style="text-align:center;">
+        <video width="600" poster="lok.png" controls loop>
+            <source src="E:\Animes\Blue Lock\01.mp4" type="video/mp4">
+            <p style="text-align: center;"><a href="E:\Animes\Blue Lock\01.mp4" download="01.mp4" type="video/mp4">Download Vídeo</a></p>
+        </video>
+    </p>
+    <p style="text-align: center;">
+        <audio preload="metadata" controls loop>
+            <source src="E:\11\Music\bob_marley_is_this_love_mp3_81100.mp3" type="audio/mpeg">
+            <p style="text-align: center;"><a href="E:\11\Music\bob_marley_is_this_love_mp3_81100.mp3" download="bob_marley_is_this_love_mp3_81100.mp3" type="audio/mpeg">Download MP3</a></p>
+        </audio>
+    </p>
+    <p style="text-align: center;">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="paisagens/paisagem-g.png" type="image/png">
+            <source media="(min-width: 790px)" srcset="paisagens/paisagem-m.png" type="image/png">
+            <img src="paisagens/paisagem-p.png" alt="Paisagem">
+        </picture>
+    </p>
+</body>
+</html>

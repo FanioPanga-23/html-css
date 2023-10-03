@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Caixa</title>
+    <style>
+        #fs {
+            font: normal bolder 3em Arial, Verdana, Helvetica, sans-serif;
+            background-color: rgb(255, 168, 29);
+            color: rgb(255, 56, 21);
+        }
+        h1{
+            width: 300px;
+            height: 50px;
+            background-color: lightgray;
+            border: 10px solid rgb(255, 29, 29); 
+            outline: 30px solid rgb(15, 63, 255);
+            /*
+                ShortHand para o "border e o outline": widht, style, color
+            */
+            padding: 10px 20px;
+            margin: 50px 300px;
+            /*
+                shorthand para "margin e padding": top, right, bottom, left (tdo em px)
+
+                e posso simplificar tmbm quando quero medidas idénticas top=bottom e right=left
+                : top, right (tdo em px)
+            */
+            font: bold 2em Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa</h1>
+    <textarea name="sdf" id="fs" cols="25" rows="1">Essa é a Minha Área de Texto</textarea>
+</body>
+</html>
