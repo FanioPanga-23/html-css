@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="telefone" id="tel" required placeholder="(xxx) xxx-xxx-xxx" pattern="\([0-9]{3}\)([\s])[0-9]{3}-[0-9]{3}-[0-9]{3}">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="modelo">Modelo do celular:</label>
+            <select name="modelo" id="modelo">
+                <option value="">Escolha um...</option>
+                <optgroup label="Aple">
+                    <option value="AIP6">iPhone 6</option>
+                    <option value="AIP6S">iPhone 6S</option>
+                    <option value="AIP6+">iPhone 6 Plus</option>
+                    <option value="AIP7">iPhone 7</option>
+                    <option value="AIP7S">iPhone 7S</option>
+                    <option value="AIP7+">iPhone 7 Plus</option>
+                </optgroup>
+                <optgroup label="samsung">
+                    <option value="SAMA11">Samsung Galxy A11</option>
+                    <option value="SAMA50">Samsung Galaxy A50</option>
+                    <option value="SAM22S">Samsung Galay 22S</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="esp">Especificações técnicas:</label>
+        </p>
+        <P>
+            <TEXTarea name="esp" id="esp" placeholder="Descreve aqui as especificações" cols="40" rows="10">
+            </TEXTarea>
+        </P>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="p">
+            <datalist id="p">
+                <optgroup label="engenharia">
+                    <option value="DEV">Programador</option>
+                    <option value="ENGS">Engenheiro de Software</option>
+                </optgroup>
+                <optgroup label="design">
+                    <option value="DG">Designer Gráfico</option>
+                    <option value="A">Animador</option>
+                    <option value="Fotógrafo">Fotógrafo</option>
+                </optgroup>
+                <optgroup label="mede">
+                    <option value="PROH">Professor de História</option>
+                    <option value="PROG">Professor de Geografia</option>
+                </optgroup>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
