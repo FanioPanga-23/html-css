@@ -114,3 +114,25 @@ Example
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...} 
+
+
+
+
+							Mobile First (o móvel primeiro)
+							
+O conceito de Modbile First, baseia-se, em pensar inicialmente no layout e funcionalidades da versão móvel e depois adaptando tudo a telas maiores.
+							
+Segundo o princípio fundamental da filosofia mobile first, pensar primeiro na versão
+móvel trás algumas vantagens:
+
+		- Uma maior divulgação do site, pois como vimos anteriormente, ferramentas de
+		    busca vão valorizá-lo;
+		    
+		- Uma melhor experiência do usuário, que vai ter acesso ao conteúdo que foi
+		    pensado para que pudesse ser consumido de forma mais confortável e sem confusões;
+		    
+		- Aumento na credibilidade, já que os visitantes vão ter a percepção (ainda que
+		    inconsciente) de que quem criou o site se preocupou com a sua experiência;
+		    
+		- Otimização do carregamento, uma vez que sofremos com conexões lentas e
+		    dispositivos populares sem tanto poder de processamento.
