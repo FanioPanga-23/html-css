@@ -1,0 +1,133 @@
+				FORMULÁRIOS
+
+1- Para remover a configuração automática de autocompletamento no formulário, mas não é obrigatório desativar está propriedade, pode ser quando ela estiver encomodando:
+
+	<form autocomplete="off">
+	</form>
+
+2- As propriedades dos inputs (name e id): 
+	name="" é mais útil para o HTML e PHP
+	id="" é mais útil para JS e uso de labels
+
+3- O uso de label é bastante importante e para criar ligação entre o input e o seu campo ou título que lhe antecede, relacionamos o "label" com o (id do input):
+
+    <form action="cadastro.php" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+	    <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+    </form>
+
+4- Métodos (method), GET e POST no HTML:
+
+	GET: é útil para dados simples e não sensíveis e ele permite o envio de até 3mil bits (3 mil letras), ou seja, o formulário todo terá de ter apenas 3mil letras
+
+	POST: é útil para envio de dados sensíveis, como senhas, cartções de crédito, imagens e por aí, e tmbm é bem útil para que os dados não apareçam na URL.
+
+	Para melhorar a segurança dos dados tenho de estudar HTTPS.
+
+5- Para evitar o envio de formulário vazio e com campos preenchidos fora das regras do site ou sistema, devemos usar algumas propriedades parecidas com constrantes em BD dentro dos "inputs". Propriedades como:
+
+	requerid (dentro do input): exigirá o preenchimento do campo em questão.
+
+	minlength (dentro do input): usado frequentemente em campos de senhas e outros, para exigir um número mínimo de caracteres para o campo em questão.
+
+	maxlength (dentro do input): faz o oposto do minlength.
+
+6- Dicas extras para formulários:
+
+	size="10" (dentro do input): estou configurando o campo em questão com umtamanho de apenas 10 caracteres, mas se o tamanho máximo (maxlength) estiver definido acima de 10 caracteres, será permitido entrar com mais de 10 caracteres, mas num campo pequeno com tamanho de apenas 10 caracteres apresentados.
+
+	placeholder="Nome de usuário": estou dando dica do tipo de dado que é usado para preencher o campo em questão
+
+	autocomplete="": é bem recomendado o seu uso dentro dos inputs para o navegador ter noção do tipo do tipo de campo que será autocompletado e conseguir relacionar bem os dados no momento da autocompletação.
+	
+	min="": geralmente usado nas campos numéricos, serve para definir o número mínimo que pode ser aceite num campo numérico.
+	
+	max="": é o oposto do min.
+	
+	step="" (do English 'passo'): serve para definir se os números pulam de quantas em quantas casas. Com eles podemos permitir o uso de números decimais nos campos numéricos.
+	
+	value="": serve para iniciar o campo em questão com um valor sugerido.
+	
+	
+								CHEKBOX e RADIO BUTTON
+								
+	Para os radio, dentro do "input" temos de usar o mesmo texto para todos outros inputs do tipo para permitir checkar ou marcar apenas 1.
+		e também temos de usar o atributo value (e o valor que for definido dentro do 'value' é que será guardado no formulário quando um dos 'radios' for marcado).
+		podemos também usar a propriedade 'checked' para iniciar com 1 dos 'radios' já selecionados (também podemos usar isso nos inputs do tipo "checkbox").
+		
+	Checkbox, usados geralmente para seleção de várias opções, após configurar o 'input', é necessário relacionar o mesmo com um label.
+	
+	
+							RANGE e FILE
+							
+		exemplos: 
+			<form action="cadastro.php" method="post">
+        			<p>
+				    <label for="cor" value="#12ff00">Cor</label>
+				    <input type="color" name="cor" id="cor">
+				</p>
+				<p>
+				    <label for="satisf">Nível de satisfação</label>
+				    <input type="range" name="satisf" id="satisf" min="1" max="10" value="3">
+				</p>
+				<p>
+				    <label for="foto">Foto de perfil</label>
+				    <input type="file" name="foto" id="foto">
+				</p>
+				<p>
+				    <input type="submit" value="Enviar">
+				    <input type="reset" value="Limpar">
+				</p>
+		     </form>
+	
+	
+							SELECT, DATEILIST e TEXTAREA 
+							
+	
+	SELECT:
+	
+	 <label for="provs">Províncias</label> /*serve para criar ligação com a lista de opções*/
+            <select name="provs" id="provs">
+                
+                <option value="" selected>---Escolha---</option> /*foi usado como um placeholder, a propriedade value está vazia para não enviar nada, isso serve apenas como um placeholder*/
+                
+                <optgroup label="Províncias consteiras"> /*optgroup: serve para selecionar tipos de opções da mesma espécie*/
+                    
+                    <option value="LA">Luanda</option> /*option, serve para inserir as opções que falarão parte do select, podemos tmbm usar a propriedade 'selected' dentro de uma das opções para a mesma opção aparecer pré-selecionada*/
+                    
+                    <option value="BL">Benguela</option>
+                    <option value="NB">Namibe</option>
+                    <option value="BN">Bengo</option>
+                    <option value="ZR">Zaire</option>
+                </optgroup>
+
+                <optgroup label="Províncias sulistas">
+                    <option value="CU">Cunene</option>
+                    <option value="CB">Cuando Cubango</option>
+                    <option value="HL">Huíla</option>
+                    <option value="BI">Bié</option>
+                    <option value="HM">Huambo</option>
+                </optgroup>
+            </select>
+            
+            
+         DATALIST:
+         	<label for="ixx">nome do campo</label>
+         	<input name="xx" id="ixx" list="lt">  /*usei a propriedade (list="") para criar ligação entre o 'input:text' com a 'datalist', é atribuido um id na datalist e o mesmo id é vinculado com na proriedade list do input*/
+         	<datalist id="lt">
+         		<option value="dado que será salvo e enviado após a seleção da opção">nome da opção</option>
+         	</datalist>
+         	
+         	/*dentro do "datalist" também podemos usar o optgroup (grupo de opções). Mas nem todos navegadores estão compatíveis ainda*/
+         	
+         	
+         TEXTAREA:
+         	<label for="msg">Mensagem</label> <br>
+            <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Deixe aqui a sua mensagem"></textarea>
+            /*Nas propriedades (row e col), não há limites, eles são infinitos*/

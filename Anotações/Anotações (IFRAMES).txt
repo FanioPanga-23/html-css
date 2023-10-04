@@ -1,0 +1,24 @@
+Para tornar os iframes mais seguros, podemos utilizar as propriedades (sandbox e referrerpolicy "Com os seus parãmetros")	
+
+	ex: <iframe src="paginas-extras/page005.html" frameborder="1" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
+	neste exemplo, foi bloqueado quase tudo excepto (scripts que sejam da mesma origem, ou seja, que estejam na mesma pasta ou no mesmo servidor)
+
+	<iframe src="paginas-extras/page004.html" frameborder="1" sandbox="allow-forms allow-same-origin"></iframe>
+	Neste exemplo foi quase tudo bloqueado, excepto (formulários de mesma origem, ou seja da mesma pasta ou do mesmo servidor)
+	
+	referrerpolicy: bloqueia a captura de dados.
+
+Lista de links com paginas para serem carregadas dentro do iframe
+	<ul>
+        	<li><a href="paginas-extras/page001.html" target="alvo">Primeira página</a></li>
+        	<li><a href="paginas-extras/page002.html" target="alvo">Segunda página</a></li>
+        	<li><a href="paginas-extras/page003.html" target="alvo">Terceira página</a></li>
+    	</ul>
+iframe configurado para as páginas
+	<iframe name="alvo" frameborder="0" srcdoc="<h1>Escolha uma opção acima<h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed 		laborum eveniet eius ipsum eum dolore tempora aspernatur architecto dolorum modi, quidem rem at quos quo atque magnam sint similique 		nulla?</p> <img src='imagens/372022517_311945664687586_5054996455062626419_n.jpg'>">
+	</iframe>
+
+	Dentro do iframe adicionei um nome com a propriedade name para servir de alvo (target) no link, permitindo assim todas as páginas dos links serem carregadas dentro do iframe
+
+	Para o iframe não ficar totalmente vazio(em branco) antes de carregar qualquer link, usei a propridade (srcdoc( onde é possível usar html)) para colocar um conteúdo!
+	

@@ -1,0 +1,116 @@
+					Media Types
+					
+As media types sao escritos dentro das aspas normais de media=" "
+
+ex:   media ="screen"     tela
+      media ="print"      impressora
+      media ="all"        configurações gerais
+      media ="handheld"	  para dispositivos de pulso
+      
+a configuração media="all" vai servir para todos os dispositivos, pois algumas configurações se repetem.
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+	
+
+					Media Queries
+
+media queries. Elas são basicamente as media types somadas
+às media features, que são características extras que foram criadas para que
+possamos personalizar ainda mais nossas folhas de estilo. A seguir, enumero algumas
+dessas características que podem ser testadas:
+
+	width e height;
+	device-height e device-width;
+	aspect-ratio e device-aspect-ratio;
+	orientation;
+	resolution;
+	color e color-index;
+	grid;
+	scan;
+	
+Basicamente, para mudar a orientação (tela em pé ou deitada) os computadores vão pegar pela resolução de tela. 
+Se a altura tiver maior que a largura, ele está como portrait (retrato).
+
+Se a largura tiver maior que a altura, ela tá como 'landscape' (paisagem).
+
+	
+	Nas medias features usamos: (and, or e only) para relacionar as mesmas com as medias "types". Tem um exemplo abaixo.
+	
+mas as media features são escritas dentro das aspas e dentro de (parênteses), logo após os media types.
+        media="screen and (orientation: portrait)"
+	<link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+
+        <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+
+
+					Extra
+					
+Importante: media types nao tem parênteses, media features tem parênteses isoladamente, ou seja, se tivermos três media fetures, teremos 3 entre parênteses.
+
+Para projetos pequenos podemos fazer tudo em único CSS:
+
+				@charset "UTF-8";
+
+				*{
+				    margin: 0;
+				    padding: 0;
+				    font-family: Arial, Helvetica, sans-serif;
+				}
+
+				body,html{
+				    width: 100vw;
+				    height: 100vh;
+				    background-color: #233eff;
+				    background-size: contain;
+				    background-repeat: no-repeat;
+				}
+
+				h1{
+				    color: #fff;
+				    padding: 10px;
+				    text-shadow: 3px 3px 3px #0d1768e8;
+				}
+
+				@media screen and (orientation: portrait){
+				    body{
+					background-image: url(../imagens/cev-portrait.jpg);
+					background-position: center bottom;
+				    }
+				}
+
+				@media screen and (orientation: landscape){
+				    body{
+					background-image: url(../imagens/cev-landscape.jpg);
+					background-position: left bottom;
+				    }
+				}
+
+
+Quando for um projeto maior, o aconselhavel é criar CSS diferentes de acordo as media:
+
+				<head>
+				    <meta charset="UTF-8">
+				    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				    <title>Media Queries</title>
+				    <link rel="stylesheet" href="estilos/geral.css" media="all">
+				    <link rel="stylesheet" href="estilos/retrato.css" media="screen  and (orientation: portrait)">
+				    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+				</head>
+
+Typical Device Breakpoints
+
+There are tons of screens and devices with different heights and widths, so it is hard to create an exact breakpoint for each device. To keep things simple you could target five common groups:
+Example
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...} 
