@@ -11,7 +11,7 @@ html,body{
 }
 
 header{
-    background-color: #808080dc;
+    background-color: #afafaf;
 }
 
 header h1{
@@ -21,15 +21,18 @@ header h1{
 
 img,#men{
     display: block;
+    background-color: #808080;
     color: #fff;
-    background-color: #777777;
-    margin: auto;
+    text-align: center;
     padding: 5px;
-    border: 1px solid #a7a7a7;
+}
+
+#men:hover{
+    
 }
 
 #men:active{
-    transform: scale(95%);
+    transform: scale(99%);
     transition: 0,5s;
 }
 
@@ -43,17 +46,17 @@ menu > ul{
 
 menu > ul > li > a{
     display: block;
-    background-color: #b4b4b4;
+    background-color: #808080;
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    border-top: 2px solid #808080;
+    border-top: 2px solid #afafaf;
     color: #fff;
     font-weight: bold;
 }
 
 menu > ul > li > a:hover{
-    background-color: #e2e2e2;
+    background-color: #d1d1d1;
     transition-duration: 0.3s;
     color: #fff;
 }

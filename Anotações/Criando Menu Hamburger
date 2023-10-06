@@ -1,0 +1,25 @@
+					Método de configuração 1. Como usar o Google Fonts
+
+A maneira mais fácil de configurar fontes de ícones para uso em qualquer página da Web é usando o Google Fonts. Você só precisa incluir uma linha de HTML:
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+e por fim pegar o espan que é dado no site, exemplo:
+
+		1- <span id="men" class="material-icons">menu</span>
+		
+		2- Adicionei um id para configura-lo ao meu gosto ou do cliente e uma função (script) para mostrar e esconder o menu assim que for precionado, exmplo:
+			 <span id="men" class="material-icons" onclick="sho_hid()">menu</span>
+			 
+			 O escript:
+				<script>
+				    function sho_hid(){
+					if(burger.style.display == 'none'){
+					    burger.style.display = 'block'
+					}else{
+					    burger.style.display = 'none'
+					}
+				    }
+				</script>
