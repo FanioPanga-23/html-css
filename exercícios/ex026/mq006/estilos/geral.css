@@ -28,7 +28,7 @@ img,#men{
 }
 
 #men:hover{
-    
+    cursor: pointer;
 }
 
 #men:active{
@@ -46,7 +46,7 @@ menu > ul{
 
 menu > ul > li > a{
     display: block;
-    background-color: #808080;
+    background-color: #8080807e;
     padding: 10px;
     text-decoration: none;
     text-align: center;
@@ -57,7 +57,7 @@ menu > ul > li > a{
 
 menu > ul > li > a:hover{
     background-color: #d1d1d1;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
     color: #fff;
 }
 
