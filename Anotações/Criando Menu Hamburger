@@ -8,7 +8,7 @@ A maneira mais fácil de configurar fontes de ícones para uso em qualquer pági
 
 e por fim pegar o espan que é dado no site, exemplo:
 
-		1- <span id="men" class="material-icons">menu</span>
+		1- <span id="men" class="material-icons">menu</span> "posso usar este span para qualquer icon, só basta mudar o nome, tipo.. de menu para face ou favorite (coração)"
 		
 		2- Adicionei um id para configura-lo ao meu gosto ou do cliente e uma função (script) para mostrar e esconder o menu assim que for precionado, exmplo:
 			 <span id="men" class="material-icons" onclick="sho_hid()">menu</span>
