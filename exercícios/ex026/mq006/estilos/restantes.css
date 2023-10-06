@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#men{
+    display: none;
+}
+
+menu{
+    display: block;
+    background-color: #575757;
+}
+
+menu > ul > li{
+    display: inline-block;
+}
+
+menu > ul > li > a{
+    border-top: 0px;
+    padding: 10px;
+}

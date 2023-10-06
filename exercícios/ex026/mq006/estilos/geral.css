@@ -19,8 +19,21 @@ header h1{
     padding: 10px;
 }
 
-menu{
+img,#men{
     display: block;
+    color: #fff;
+    background-color: #bdbdbd;
+    margin: auto;
+    padding: 5px;
+}
+
+#men:active{
+    transform: scale(95%);
+    transition: 0,5s;
+}
+
+menu{
+    display: none;
 }
 
 menu > ul{
