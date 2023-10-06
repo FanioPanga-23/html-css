@@ -6,7 +6,6 @@
 
 menu{
     display: block;
-    background-color: #575757;
 }
 
 menu > ul > li{
@@ -16,4 +15,10 @@ menu > ul > li{
 menu > ul > li > a{
     border-top: 0px;
     padding: 10px;
+    background-color: #b6b6b6;
+    color: #fff;
+}
+
+menu > ul > li > a:hover{
+    background-color: #808080;
 }

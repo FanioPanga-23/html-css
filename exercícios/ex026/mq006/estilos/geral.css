@@ -11,7 +11,7 @@ html,body{
 }
 
 header{
-    background-color: #808080;
+    background-color: #808080dc;
 }
 
 header h1{
@@ -22,9 +22,10 @@ header h1{
 img,#men{
     display: block;
     color: #fff;
-    background-color: #bdbdbd;
+    background-color: #777777;
     margin: auto;
     padding: 5px;
+    border: 1px solid #a7a7a7;
 }
 
 #men:active{
@@ -42,16 +43,23 @@ menu > ul{
 
 menu > ul > li > a{
     display: block;
-    background-color: #5a5a5a;
+    background-color: #b4b4b4;
     padding: 10px;
     text-decoration: none;
     text-align: center;
     border-top: 2px solid #808080;
     color: #fff;
+    font-weight: bold;
 }
 
 menu > ul > li > a:hover{
-    background-color: #808080;
+    background-color: #e2e2e2;
+    transition-duration: 0.3s;
+    color: #fff;
+}
+
+menu > ul > li > a:active{
+    transform: scale(95%);
 }
 
 main{
