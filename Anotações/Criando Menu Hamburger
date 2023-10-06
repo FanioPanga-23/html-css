@@ -23,3 +23,5 @@ e por fim pegar o espan que é dado no site, exemplo:
 					}
 				    }
 				</script>
+				
+ATT: Adicionando um icon, ele será reconhecido como caracter e o cursor aparecerá como se estivesse editando um texto, para fazer parecer como um ponteiro, tenho de usar esta propriedade no CSS:
