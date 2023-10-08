@@ -1,0 +1,6 @@
+section{
+	transition: width 0.3s, height 0.s;
+	transition-timing-function: ease;
+}
+
+		Usei essas configurações, para quando a largura (width) e altura (height) da tela forem redimencionados, levar 0.3 segundos e com uma velocidade branda, só para dar uma suvisada e proporcionar uma boa esperiência ao usuário
