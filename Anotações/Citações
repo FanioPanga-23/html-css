@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Here is a quote from WWF's website:</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+
+</body>
+</html>
+
+
+Explicando o código:
+
+	Para citações de textos longos, usamos a tag (<blockquote></blockquote>) e para citações curtas, usamos a tag (<q></q>).
+	Dentro da tag (<blockquote></blockquote>), usamos a propriedade (cite=""), serviu para fazer o navegador perceber a origem do conteudo cita ou destacado (neste caso o site de origem é o WWF's). 
+	
+
+				HTML <address> para Informações de Contato
+
+O HTML <address>Tag define as informações de contato do autor/proprietário de um documento ou um artigo.
+
+As informações de contato podem ser um endereço de e-mail, URL, endereço físico, telefone número, alça de mídia social, etc.
+
+O texto no <address>elemento geralmente torna em itálico, e os navegadores irão Sempre adicione uma quebra de linha antes e depois do <address>Elemento.
+
+				HTML <cite> para o título de trabalho (somente o titulo do trabalho "obra" e não o nome do autor)
+
+O HTML <cite>Tag define o título de a trabalho criativo (por exemplo, um livro, um poema, uma canção, um filme, uma pintura, uma escultura, etc.).
+
+Nota: O nome de uma pessoa não é o título de uma obra.
+
+O texto no <cite>O elemento geralmente é em itálico.
