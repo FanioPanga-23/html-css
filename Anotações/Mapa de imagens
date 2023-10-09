@@ -64,4 +64,26 @@ Para adicionar uma área de círculo, primeiro localize as coordenadas do centro
 
 Em seguida, especifique o raio do círculo: 44
 
+ATT: A imagem em estudo está no curso de HTML5 do W3C, no capítulo (mapa de imagem).
 
+
+Shape="poly":
+
+shape="poly"Contém várias coordenadas pontos, que criam uma forma formada com linhas retas (um polígono).
+
+Isso pode ser usado para criar qualquer forma.
+
+Talvez com uma forma de croissant!
+
+Como podemos fazer o croissant na imagem abaixo se tornar um link clicável?  
+
+ATT: A imagem em estudo está no curso de HTML5 do W3C, no capítulo (mapa de imagem).
+
+Temos que encontrar as coordenadas x e y para todas as bordas do croissant:
+
+As coordenadas vêm em pares, um para o eixo x e um para o eixo y:
+ Exemplo:
+ 
+	<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+	
+ATT: A imagem em estudo está no curso de HTML5 do W3C, no capítulo (mapa de imagem).
