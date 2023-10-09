@@ -1,0 +1,67 @@
+Com mapas de imagens HTML, você pode criar áreas clicáveis em uma imagem.
+
+A tag <map> define o map de imagem. Um mapa de imagens é uma imagem com áreas clicáveis. As coordenadas são definidas com uma ou mais tags <area>.
+
+Exemplo:
+
+	<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+	<map name="workmap">
+	  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+	  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+	  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+	</map>
+	
+Como é que funciona?
+
+A ideia por trás de um mapa de imagem é que você deve ser capaz de executar diferentes ações dependendo de onde na imagem você clica.
+
+Para criar um mapa de imagem, você precisa de uma imagem e algum código HTML que descreva as áreas clicáveis.
+
+Explicando o código acima:
+	
+		Para criar uma mapa de imagem, temos usar o atributo usemap="" dentro da tag <img src="" alt="" usemap=""></img>. O nome atribuido no atributo usemap="" tem de começar com um # (hastag), que será vinculado com a tag <map>. Ex: <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+		
+		Para vincular a imagem com a tag <map>, colocamos o nome atribuído no atributo usemap="" (dentro da tag <img>), mas sem o # (hastag) no atributo name="", isto, na tag <map>: <map name="workmap">
+		
+		
+As áreas:
+
+Em seguida, adicione as áreas clicáveis.
+
+Uma área clicável é definida usando a tag <area> dentro da tag <map>, como no código acima.
+
+
+Forma:
+
+Você deve definir a forma da área clicável, e você pode escolher um destes Valores:
+
+    rect- define uma região retangular
+    circle- define uma região circular
+    poly- define uma região poligonal
+    default- define toda a região
+
+Você também deve definir algumas coordenadas para poder colocar a área clicável em A imagem. 
+
+Shape="rect":
+
+As coordenadas para shape="rect"vêm em pares, um para o eixo x e um para o eixo y.
+
+Por isso, as coordenadas 34,44 está localizado 34 pixels da margem esquerda e 44 pixels do topo: 
+
+As coordenadas 270,350está localizado 270 pixels da margem esquerda e 350 pixels do topo:
+
+Exemplo:
+	 <area shape="rect" coords="34, 44, 270, 350" href="computer.htm"> 
+	 
+ATT: A imagem em estudo está no curso de HTML5 do W3C, no capítulo (mapa de imagem)
+
+
+Shape="circle":
+		Para formar um círculo precisamos de apenas 3 coordenadas, explicação abaixo.
+
+Para adicionar uma área de círculo, primeiro localize as coordenadas do centro do círculo: 337,300
+
+Em seguida, especifique o raio do círculo: 44
+
+
