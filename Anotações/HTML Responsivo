@@ -1,0 +1,11 @@
+Imagens responsivas:
+
+Imagens responsivas são imagens que escalam muito bem para caber em qualquer tamanho do navegador.
+Usando a largura Propriedade
+
+Se a propriedade (width:;) está configurada para 100%, a imagem será responsiva e dimensionará Para cima e para baixo
+
+Observe que, no exemplo acima, a imagem pode ser ampliada para ser maior que o tamanho original. Uma solução melhor, em muitos casos, será usar a propriedade (max-width:;).
+Usando a propriedade max-width
+
+Se a ropriedade (max-width:;) está configurada para 100%, a imagem diminuirá se for precisar, mas nunca aumentará a escala para ser maior do que o tamanho original:
