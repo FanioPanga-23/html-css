@@ -8,4 +8,35 @@ Se a propriedade (width:;) está configurada para 100%, a imagem será responsiv
 Observe que, no exemplo acima, a imagem pode ser ampliada para ser maior que o tamanho original. Uma solução melhor, em muitos casos, será usar a propriedade (max-width:;).
 Usando a propriedade max-width
 
-Se a ropriedade (max-width:;) está configurada para 100%, a imagem diminuirá se for precisar, mas nunca aumentará a escala para ser maior do que o tamanho original:
+Se a ropriedade (max-width:;) está configurada para 100%, a imagem diminuirá se for precisar, mas nunca aumentará a escala para ser maior do que o tamanho original, usando o max-width: 100%; e o height: auto; tmbm ajuda bastante, pois o ajuste da altura será responsabilidade do navegador
+
+Media Queries
+
+In addition to resize text and images, it is also common to use media queries in responsive web pages.
+
+With media queries you can define completely different styles for different browser sizes.
+
+Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stack vertically on small screens:
+
+Example:
+
+		<style>
+		.left, .right {
+		  float: left;
+		  width: 20%; /* The width is 20%, by default */
+		}
+
+		.main {
+		  float: left;
+		  width: 60%; /* The width is 60%, by default */
+		}
+
+		/* Use a media query to add a breakpoint at 800px: */
+		@media screen and (max-width: 800px) {
+		  .left, .main, .right {
+		    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+		  }
+		}
+		</style>
+		
+
