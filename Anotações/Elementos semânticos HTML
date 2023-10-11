@@ -29,8 +29,8 @@ In HTML there are some semantic elements that can be used to define different pa
     <summary>
     <time>
 
-
-HTML <section> Elemento
+	
+						HTML <section> Elemento
 
 O elemento <section> define uma seção em um documento.
 
@@ -46,3 +46,137 @@ Exemplos de onde a <section> pode ser usado:
 Exemplo: o site www.w3schools.com/html, tem uma <section> com os temas dos tutoriais de HTML
 
 Uma página da web pode normalmente ser dividida em seções para introdução, conteúdo e informações de contato.
+
+
+						HTML <article>
+
+O que é <article>O elemento especifica conteúdo independente e independente.
+
+Um artigo deve fazer sentido por conta própria, e deve ser possível Distribuí-lo independentemente do resto do site.
+
+Exemplos de onde o <article>O elemento pode ser usado:
+
+    Publicações do fórum
+    Posts do blog
+    Comentários do usuário
+    Cartões do produto
+    Artigos de jornal
+
+Exemplo:
+
+Use CSS para estilizar o elemento ?artículo:
+		<html>
+		<head>
+		<style>
+		.all-browsers {
+		  margin: 0;
+		  padding: 5px;
+		  background-color: lightgray;
+		}
+
+		.all-browsers > h1, .browser {
+		  margin: 10px;
+		  padding: 5px;
+		}
+
+		.browser {
+		  background: white;
+		}
+
+		.browser > h2, p {
+		  margin: 4px;
+		  font-size: 90%;
+		}
+		</style>
+		</head>
+		<body>
+
+		<article class="all-browsers">
+		  <h1>Most Popular Browsers</h1>
+		  <article class="browser">
+		    <h2>Google Chrome</h2>
+		    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+		  </article>
+		  <article class="browser">
+		    <h2>Mozilla Firefox</h2>
+		    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+		  </article>
+		  <article class="browser">
+		    <h2>Microsoft Edge</h2>
+		    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+		  </article>
+		</article>
+
+		</body>
+		</html> 
+		
+		
+		
+					Nesting(aninhamento) <article> in <section> or Vice Versa?
+
+The <article> element specifies independent, self-contained content.
+
+The <section> element defines section in a document.
+
+Can we use the definitions to decide how to nest those elements? No, we cannot!
+
+So, you will find HTML pages with <section> elements containing <article> elements, and <article> elements containing <section> elements.
+
+TIPE: Nest, mean (ninho, "aninhamento")
+
+
+					HTML <nav> Elemento
+
+O que é <nav>O elemento define um conjunto de links de navegação.
+
+Observe que nem todos os links de um documento devem estar dentro de um <nav>Elemento. O que é <nav>O elemento destina-se apenas a principais blocos de links de navegação.
+
+Os navegadores, como leitores de tela para usuários com deficiência, podem usar esse elemento determinar se deve omitir a renderização inicial deste conteúdo.
+
+
+					HTML <aside> Elemento
+
+O que é <aside>O elemento define algum conteúdo além do conteúdo que é colocado em (como uma barra lateral).
+
+O que é <aside>O conteúdo deve ser indiretamente relacionado ao conteúdo circundante.
+Exemplo
+
+Exiba algum conteúdo além do conteúdo em que é colocado:
+	Exemplo de <aside>
+
+
+		<head>
+		<style>
+		aside {
+		  width: 30%;
+		  padding-left: 15px;
+		  margin-left: 15px;
+		  float: right;
+		  font-style: italic;
+		  background-color: lightgray;
+		}
+		</style>
+		</head>
+
+		<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+		<aside>
+		<h4>Epcot Center</h4>
+		<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+		</aside> 
+		
+		
+					HTML <figure> e <figcaption> Elementos
+
+<figure> especifica conteúdo auto-contido, como ilustrações, diagramas, fotos, listagens de código, etc.
+
+O que é <figcaption>Tag define uma legenda para a <figure>Elemento. O que é <figcaption>O elemento pode ser colocado como o primeiro ou como o último filho de um <figure>Elemento.
+
+O que é <img>O elemento define a imagem/ilustração real.
+Exemplo
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli"> <!--posso colocar qualquer imagem-->
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure> 
+
+A combinação das tags <figure> e <figcaption>, é como nos livros, dentro do conteúdo há sempre uma imagem, ilustrando algo sobre o conteúdo em questão e com uma pequena ou média legenda abaixo da mesma (imagem) para descreve-lá.
