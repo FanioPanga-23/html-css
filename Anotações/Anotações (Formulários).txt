@@ -290,3 +290,69 @@ Alguns smartphones reconhecem o tipo url e adiciona ".com" ao teclado para combi
 		disabled (serve para deixar um input apenas visível, mas inoperável);
 		readonly (serve para deixar um input até clicável, mas somente para leitura);
 		autofoco (especifica que um campo de entrada deve automaticamente obter foco quando a página é carregada.)
+		
+
+						Atributos do <form>
+						
+The form Attribute:
+
+The input form attribute specifies the form the <input> element belongs to.
+
+The value of this attribute must be equal to the id attribute of the <form> element it belongs to.
+
+Example:
+
+	An input field located outside of the HTML form (but still a part of the form):
+		
+		<form action="/action_page.php" id="form1">
+		  <label for="fname">First name:</label>
+		  <input type="text" id="fname" name="fname"><br><br>
+		  <input type="submit" value="Submit">
+		</form>
+
+		<label for="lname">Last name:</label>
+		<input type="text" id="lname" name="lname" form="form1">
+		
+		
+						The formaction Attribute
+
+The input formaction attribute specifies the URL of the file that will process the input when the form is submitted.
+
+Note: This attribute overrides(substitui) the action attribute of the <form> element.
+
+The formaction attribute works with the following input types: submit and image.
+Example
+
+An HTML form with two submit buttons, with different actions:
+		
+		<form action="/action_page.php">
+		  <label for="fname">First name:</label>
+		  <input type="text" id="fname" name="fname"><br><br>
+		  <label for="lname">Last name:</label>
+		  <input type="text" id="lname" name="lname"><br><br>
+		  <input type="submit" value="Submit">
+		  <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+		</form> 
+	2 Botões de submissão, o primeiro é para o action_page.php e o outro é para o action_page2.php, dentro do atributo em questão "formaction"
+	
+	
+
+						O atributo formenctype
+
+O atributo "formenctype" especifica como os dados de formulário devem ser codificados quando enviados (apenas para formulários com método"post").
+
+Nota: Este atributo substitui o atributo enctype(tipo de codificação) do Elemento <form>.
+
+O atributo formenctype funciona com os seguintes tipos de entrada: enviar e visualizar.
+
+Exemplo:
+
+Um formulário com dois botões de envio. O primeiro envia os dados de formulário com codificação padrão, O segundo envia os dados do formulário codificados como "multipart/form-data":
+		
+		<form action="/action_page_binary.asp" method="post">
+		  <label for="fname">First name:</label>
+		  <input type="text" id="fname" name="fname"><br><br>
+		  <input type="submit" value="Submit">
+		  <input type="submit" formenctype="multipart/form-data"
+		  value="Submit as Multipart/form-data">
+		</form> 
