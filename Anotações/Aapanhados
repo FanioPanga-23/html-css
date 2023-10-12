@@ -28,7 +28,7 @@ The area of a triangle is: 1/2 x b x h, where b is the base, and h is the vertic
 
 
 Some Useful HTML Character Entities
-Result 	Description 	Name 	Number 	
+	Result 	Description 	Name 	Number 	
 
 		non-breaking space 	&nbsp; 	&#160; 	
 	< 	less than 		&lt; 	&#60; 	
@@ -42,3 +42,40 @@ Result 	Description 	Name 	Number
 	€ 	euro 	&euro; 		&#8364; 	
 	© 	copyright 		&copy; 	&#169; 	
 	® 	trademark 		&reg; 	&#174;
+	
+	
+Some Mathematical Symbols Supported by HTML
+
+	Char 	Number 	Entity 	Description
+	 	
+	∀ 	&#8704; 	&forall; 	For all 	
+	∂ 	&#8706; 	&part; 		Partial differential 	
+	∃ 	&#8707; 	&exist; 	There exists 	
+	∅ 	&#8709; 	&empty; 	Empty sets 	
+	∇ 	&#8711; 	&nabla; 	Nabla 	
+	∈ 	&#8712; 	&isin; 		Element of 	
+	∉ 	&#8713; 	&notin; 	Not an element of 	
+	∋ 	&#8715; 	&ni; 		Contains as member 	
+	∏ 	&#8719; 	&prod; 		N-ary product 	
+	∑ 	&#8721; 	&sum; 		N-ary summation
+
+Since Emojis are characters, they can be copied, displayed, and sized just like any other character in HTML.
+Example
+
+	<html>
+	<meta charset="UTF-8">
+	<body>
+
+	<h1>Sized Emojis</h1>
+
+	<p style="font-size:48px">
+	&#128512; &#128516; &#128525; &#128151;
+	</p>
+
+	</body>
+	</html> 
+
+	
+ATT: Para mais símbolos Matemáticos e outro: https://www.w3schools.com/charsets/ref_utf_math.asp
+
+
