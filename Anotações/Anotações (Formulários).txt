@@ -356,3 +356,96 @@ Um formulário com dois botões de envio. O primeiro envia os dados de formulár
 		  <input type="submit" formenctype="multipart/form-data"
 		  value="Submit as Multipart/form-data">
 		</form> 
+		
+		
+						The novalidate Attribute
+
+The novalidate attribute is a <form> attribute.
+
+When present, novalidate specifies that all of the form-data should not be validated when submitted.
+Example
+
+Specify that no form-data should be validated on submit:
+		
+		<form action="/action_page.php" novalidate>
+		  <label for="email">Enter your email:</label>
+		  <input type="email" id="email" name="email"><br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+		
+		
+						O atributo formnovalidate
+
+A entrada formnovalidateO atributo especifica que um elemento “input’ não deve ser validado quando submetido.
+
+Nota: Este atributo substitui o atributo novalidate do <form>Elemento.
+
+O que é formnovalidateO atributo funciona com o Os seguintes tipos de entrada: submeter.
+Exemplo
+
+Um formulário com dois botões de envio (com e sem validação):
+		
+		<form action="/action_page.php">
+		  <label for="email">Enter your email:</label>
+		  <input type="email" id="email" name="email"><br><br>
+		  <input type="submit" value="Submit">
+		  <input type="submit" formnovalidate="formnovalidate"
+		  value="Submit without validation">
+		</form> 
+		
+		
+						O atributo formtarget
+
+A entrada formtargetO atributo especifica um nome ou uma palavra-chave que indica onde para exibir a resposta recebida após o envio do formulário.
+
+Nota: Este atributo substitui o atributo de destino do <form>Elemento.
+
+O que é formtargetO atributo funciona com o Os seguintes tipos de entrada: enviar e visualizar.
+Exemplo
+
+Um formulário com dois botões de envio, com diferentes janelas de destino:
+		
+		<form action="/action_page.php">
+		  <label for="fname">First name:</label>
+		  <input type="text" id="fname" name="fname"><br><br>
+		  <label for="lname">Last name:</label>
+		  <input type="text" id="lname" name="lname"><br><br>
+		  <input type="submit" value="Submit">
+		  <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+		</form> 
+		
+		
+						O atributo do método de formmethod
+
+A entrada formmethodO atributo define o método HTTP para enviar dados de formulário para o URL de ação.
+
+Nota: Este atributo substitui o atributo method do <form>Elemento.
+
+O que é formmethodO atributo funciona com o Os seguintes tipos de entrada: enviar e visualizar.
+
+Os dados de formulário podem ser enviados como variáveis de URL (method"get") ou como um post HTTP transação (method-"post").
+
+Notas sobre o método "get":
+
+    Este método anexa os dados de formulário à URL em pares de nome/valor
+    Este método é útil para envios de formulários onde um usuário deseja marcar O resultado
+    Há um limite para a quantidade de dados que você pode colocar em um URL (varias entre Navegador), portanto, você não pode ter certeza de que todos os dados de formulário serão Correta corretamente transferida
+    Nunca use o método "get" para passar informações sensíveis! (senha ou Outras informações sensíveis serão visíveis na barra de endereços do navegador)
+
+Notas sobre o método "pós":
+
+    Este método envia os dados de formulário como uma transação de post HTTP
+    As submissões de formulário com o método "post" não podem ser marcadas
+    O método "pós" é mais robusto e seguro do que "get", e "post" faz não têm limitações de tamanho
+
+Exemplo
+
+Um formulário com dois botões de envio. O primeiro envia os dados de formulário com método"get". O segundo envia os dados de formulário com o método""post":
+		<form action="/action_page.php" method="get">
+		  <label for="fname">First name:</label>
+		  <input type="text" id="fname" name="fname"><br><br>
+		  <label for="lname">Last name:</label>
+		  <input type="text" id="lname" name="lname"><br><br>
+		  <input type="submit" value="Submit using GET">
+		  <input type="submit" formmethod="post" value="Submit using POST">
+		</form> 
