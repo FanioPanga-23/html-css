@@ -59,9 +59,31 @@
 								
 	Para os radio, dentro do "input" temos de usar o mesmo texto para todos outros inputs do tipo para permitir checkar ou marcar apenas 1.
 		e também temos de usar o atributo value (e o valor que for definido dentro do 'value' é que será guardado no formulário quando um dos 'radios' for marcado).
-		podemos também usar a propriedade 'checked' para iniciar com 1 dos 'radios' já selecionados (também podemos usar isso nos inputs do tipo "checkbox").
-		
-	Checkbox, usados geralmente para seleção de várias opções, após configurar o 'input', é necessário relacionar o mesmo com um label.
+		podemos também usar a propriedade 'checked' para iniciar com 1 dos 'radios' já selecionados (também podemos usar isso nos inputs do tipo "checkbox" apenas a propriedade checked).
+	
+	Exemplo do Radio button:
+	
+			<form>
+			  <input type="radio" id="html" name="fav_language" value="HTML">
+			  <label for="html">HTML</label><br>
+			  <input type="radio" id="css" name="fav_language" value="CSS">
+			  <label for="css">CSS</label><br>
+			  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+			  <label for="javascript">JavaScript</label>
+			</form> 	
+	
+Checkbox, usados geralmente para seleção de várias opções, após configurar o 'input', é necessário relacionar o mesmo com um label.
+
+	Exemplo de Checkbox:
+	
+		 <form>
+		  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		  <label for="vehicle1"> I have a bike</label><br>
+		  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		  <label for="vehicle2"> I have a car</label><br>
+		  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		  <label for="vehicle3"> I have a boat</label>
+		</form> 
 	
 	
 							RANGE e FILE
@@ -91,6 +113,10 @@
 							
 	
 	SELECT:
+	
+	Permitir várias seleções: Use o Atributo multiple (multiple="3 ou mais") para permitir que o usuário selecione mais de um valor: para fazer as várias seleções é só manter CTRL e selecionar
+	
+	Valores visíveis: Use o atributo size="1,2,3 ou mais" para especificar o número de valores visíveis
 	
 	 <label for="provs">Províncias</label> /*serve para criar ligação com a lista de opções*/
             <select name="provs" id="provs">
@@ -131,3 +157,58 @@
          	<label for="msg">Mensagem</label> <br>
             <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Deixe aqui a sua mensagem"></textarea>
             /*Nas propriedades (row e col), não há limites, eles são infinitos*/
+            
+            
+            
+O atributo name="" para input
+
+Observe que cada campo de entrada deve ter um nameAtributo a ser enviado.
+
+Se o atributo name="" é omitido, o valor do campo de entrada não será enviado.
+	
+	Exemplo
+
+	Este exemplo não irá enviar o valor do campo de entrada "Primeiro nome":
+		<form action="/action_page.php">
+		  <label for="fname">First name:</label><br>
+		  <input type="text" id="fname" value="John"><br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+		
+					
+						
+						Atributos para a tag form
+						
+.Action = aqui vai o arquivo php, manipulador de formulário
+.target = _black, _self, _parent, _top, framename
+.method = get e post
+.autocomplete = on ou of
+.novalidate = é um atributo booleano. Quando presente, especifica que os dados de formulário (input) não devem ser validados quando enviados.
+
+
+			List of All <form> Attributes
+
+Attribute 	Description
+
+accept-charset 	Specifies the character encodings used for form submission
+action 		Specifies where to send the form-data when a form is submitted
+autocomplete 	Specifies whether a form should have autocomplete on or off
+enctype 	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+method 		Specifies the HTTP method to use when sending form-data
+name 		Specifies the name of the form
+novalidate 	Specifies that the form should not be validated when submitted
+rel 		Specifies the relationship between a linked resource and the current document
+target 		Specifies where to display the response that is received after submitting the form
+
+
+
+O elemento <button>
+
+O elemento <button> define um botão clicável:
+
+Exemplo:
+
+	<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+Nota: Sempre especifique o typeatributo para o elemento do botão. Diferentes navegadores podem usar diferentes tipos padrão para o elemento do botão.
+
