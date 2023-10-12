@@ -144,6 +144,26 @@ Checkbox, usados geralmente para seleção de várias opções, após configurar
             
             
          DATALIST:
+         
+         elemento <datalist> especifica uma lista de opções predefinidas para um <input>Elemento.
+         Os usuários verão uma lista suspensa das opções predefinidas à medida que inserem dados.
+
+	 O Atributo <input>, deve referir-se ao atributo id do Elemento <datalist>.
+	 
+	 EXEMPLO:
+	 
+		<form action="/action_page.php">
+		  <input list="browsers">
+		  <datalist id="browsers">
+		    <option value="Edge">
+		    <option value="Firefox">
+		    <option value="Chrome">
+		    <option value="Opera">
+		    <option value="Safari">
+		  </datalist>
+		</form> 	 	
+         
+         
          	<label for="ixx">nome do campo</label>
          	<input name="xx" id="ixx" list="lt">  /*usei a propriedade (list="") para criar ligação entre o 'input:text' com a 'datalist', é atribuido um id na datalist e o mesmo id é vinculado com na proriedade list do input*/
          	<datalist id="lt">
@@ -160,7 +180,7 @@ Checkbox, usados geralmente para seleção de várias opções, após configurar
             
             
             
-O atributo name="" para input
+					O atributo name="" para input
 
 Observe que cada campo de entrada deve ter um nameAtributo a ser enviado.
 
@@ -174,6 +194,25 @@ Se o atributo name="" é omitido, o valor do campo de entrada não será enviado
 		  <input type="text" id="fname" value="John"><br><br>
 		  <input type="submit" value="Submit">
 		</form> 
+	
+	
+	
+				Fieldset e Legend
+		
+Elemento <fieldset> é usado para agrupar dados relacionados em um formulário.
+
+O que é <legend>Elemento define uma legenda para o <fieldset>Elemento.
+	
+	<form action="/action_page.php">
+	  <fieldset>
+	    <legend>Personalia:</legend>
+	    <label for="fname">First name:</label><br>
+	    <input type="text" id="fname" name="fname" value="John"><br>
+	    <label for="lname">Last name:</label><br>
+	    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+	    <input type="submit" value="Submit">
+	  </fieldset>
+	</form>
 		
 					
 						
@@ -212,3 +251,42 @@ Exemplo:
 
 Nota: Sempre especifique o typeatributo para o elemento do botão. Diferentes navegadores podem usar diferentes tipos padrão para o elemento do botão.
 
+
+
+						Input Type Search
+
+The <input type="search"> is used for search fields (a search field behaves like a regular text field).
+
+	Example
+
+		<form>
+		  <label for="gsearch">Search Google:</label>
+		  <input type="search" id="gsearch" name="gsearch">
+		</form> 
+		
+		
+		
+		
+		
+					Tipo de entrada Url
+	
+O que é <input type="url">é usado para campos de entrada que devem conter um endereço URL.
+
+Dependendo do suporte do navegador, o campo url pode ser validado automaticamente Quando submetido.
+
+Alguns smartphones reconhecem o tipo url e adiciona ".com" ao teclado para combinar Url de entrada.
+
+	Exemplo
+
+		<form>
+		  <label for="homepage">Add your homepage:</label>
+		  <input type="url" id="homepage" name="homepage">
+		</form> 
+		
+		
+		
+						Alguns atributos para os inputs
+						
+		disabled (serve para deixar um input apenas visível, mas inoperável);
+		readonly (serve para deixar um input até clicável, mas somente para leitura);
+		autofoco (especifica que um campo de entrada deve automaticamente obter foco quando a página é carregada.)
