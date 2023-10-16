@@ -1,0 +1,31 @@
+Margem - Lados Individuais
+
+CSS tem propriedades para especificar a margem para cada O lado de um elemento:
+
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+
+Todas as propriedades de margem podem ter os seguintes valores:
+
+    Auto - o navegador calcula a margem
+    comprimento - especifica uma margem em px, pt, cm, etc.
+    % - especifica uma margem em % da largura do elemento que contém
+    herdar - especifica que a margem deve ser herdada do elemento pai
+
+Dica: Valores negativos são permitidos.
+
+
+
+
+Para manter a largura, não importa a quantidade de "padding", você pode usar o Propriedade "box-sizing". Isso faz com que o elemento mantenha sua largura real; se você aumenta o "padding", o espaço de conteúdo disponível diminuirá.
+Exemplo
+
+Use a propriedade de dimensionamento de caixa para manter a largura, não importa o quantidade de "padding":
+	
+	div {
+	  width: 300px;
+	  padding: 25px;
+	  box-sizing: border-box;
+	} 

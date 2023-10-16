@@ -78,4 +78,21 @@ Example
 	
 ATT: Para mais símbolos Matemáticos e outro: https://www.w3schools.com/charsets/ref_utf_math.asp
 
+Cores com transparência:
 
+	Exemplo:
+		selector{
+			background-color: rgba(256, 120, 5, 0.1); )/* a opacidade é definida nos últimos valores (alfa)*/
+		}
+		
+
+
+ When using the shorthand property the order of the property values is:
+
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+    background-attachment
+    background-size
