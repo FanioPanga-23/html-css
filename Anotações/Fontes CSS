@@ -1,0 +1,155 @@
+Alguns exemplos de fontes:
+	
+	Generic Font Family 	Examples of Font Names
+	
+	Serif 		Times New Roman
+			Georgia
+			Garamond
+	
+	Sans-serif 	Arial
+			Verdana
+			Helvetica
+	
+	Monospace 	Courier New
+			Lucida Console
+			Monaco
+	
+	Cursive 	Brush Script MT
+			Lucida Handwriting
+	
+	Fantasy 	Copperplate
+			Papyrus
+			
+	
+
+
+Best Web Safe Fonts for HTML and CSS
+
+The following list are the best web safe fonts for HTML and CSS:
+
+	    Arial (sans-serif)
+	    Verdana (sans-serif)
+	    Tahoma (sans-serif)
+	    Trebuchet MS (sans-serif)
+	    Times New Roman (serif)
+	    Georgia (serif)
+	    Garamond (serif)
+	    Courier New (monospace)
+	    Brush Script MT (cursive)
+	    
+	    
+	    
+	    
+						Variante de fonte
+
+O que é font-variantPropriedade especifica se um texto deve ou não ser exibido em uma fonte de small-caps.
+
+Em uma fonte de pequenas letras, todas as letras minúsculas são convertidas em maiúsculas Cartas. No entanto, as letras maiúsculas convertidas aparecem em um tamanho de fonte menor do que as letras maiúsculas originais no texto.
+
+Exemplo
+	p.normal {
+	  font-variant: normal;
+	}
+
+	p.small {
+	  font-variant: small-caps;
+	} 
+	
+	
+	
+Set Font Size With Em
+
+To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+
+The size can be calculated from pixels to em using this formula: pixels/16=em
+
+Example
+	h1 {
+	  font-size: 2.5em; /* 40px/16=2.5em */
+	}
+
+	h2 {
+	  font-size: 1.875em; /* 30px/16=1.875em */
+	}
+
+	p {
+	  font-size: 0.875em; /* 14px/16=0.875em */
+	} 
+	
+	
+	
+ATT: 
+
+Use uma combinação de porcentagem e Em
+
+A solução que funciona em todos os navegadores é definir um tamanho de fonte padrão no por cento para o elemento "corpo':
+
+Exemplo:
+
+	body {
+	  font-size: 100%;
+	}
+
+	h1 {
+	  font-size: 2.5em;
+	}
+
+	h2 {
+	  font-size: 1.875em;
+	}
+
+	p {
+	  font-size: 0.875em;
+	} 
+	
+	
+	
+Usar várias fontes do Google
+
+Para usar várias fontes do Google, basta separar os nomes das fontes com um pipe Personagem (|), assim:
+Exemplo
+
+Solicitar várias fontes:
+	<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+	<style>
+	h1.a {font-family: "Audiowide", sans-serif;}
+	h1.b {font-family: "Sofia", sans-serif;}
+	h1.c {font-family: "Trirong", serif;}
+	</style>
+	</head>
+	
+Nota: Solicitar várias fontes pode diminuir a velocidade de suas páginas da web! Portanto, tenha cuidado com isso.
+
+
+
+Enabling Font Effects
+
+Google has also enabled different font effects that you can use.
+
+First add effect=effectname to the Google API, then add a special class name to the element that is going to use the special effect. The class name always starts with font-effect- and ends with the effectname.
+
+To request multiple font effects, just separate the effect names with a pipe character (|), like this:
+Example
+
+Add multiple effects to the "Sofia" font:
+	
+	<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+	<style>
+	body {
+	  font-family: "Sofia", sans-serif;
+	  font-size: 30px;
+	}
+	</style>
+	</head>
+	<body>
+
+	<h1 class="font-effect-neon">Neon Effect</h1>
+	<h1 class="font-effect-outline">Outline Effect</h1>
+	<h1 class="font-effect-emboss">Emboss Effect</h1>
+	<h1 class="font-effect-shadow-multiple">Multiple Shadow Effect</h1>
+
+	</body>
