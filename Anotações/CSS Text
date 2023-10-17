@@ -8,3 +8,145 @@ In this chapter you will learn about the following properties:
     unicode-bidi
     vertical-align
 
+
+						Text Alignment
+
+The text-align property is used to set the horizontal alignment of a text.
+
+A text can be left or right aligned, centered, or justified.
+
+The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):
+
+Example
+	h1 {
+	  text-align: center;
+	}
+
+	h2 {
+	  text-align: left;
+	}
+
+	h3 {
+	  text-align: right;
+	}
+
+
+When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):
+
+Example
+	div {
+	  text-align: justify;
+	}
+
+
+
+				Text Align Last
+
+The text-align-last property specifies how to align the last line of a text.
+Example
+
+Align the last line of text in three <p> elements:
+	p.a {
+	  text-align-last: right;
+	}
+
+	p.b {
+	  text-align-last: center;
+	}
+
+	p.c {
+	  text-align-last: justify;
+	}
+	Text Direction
+
+	The direction and unicode-bidi properties can be used to change the text direction of an element:
+	Example
+	p {
+	  direction: rtl;
+	  unicode-bidi: bidi-override;
+	}
+
+
+
+
+				Vertical Alignment
+
+The vertical-align property sets the vertical alignment of an element.
+Example
+
+
+Set the vertical alignment of an image in a text: 
+	img.a {
+	  vertical-align: baseline;
+	}
+
+	img.b {
+	  vertical-align: text-top;
+	}
+
+	img.c {
+	  vertical-align: text-bottom;
+	}
+
+	img.d {
+	  vertical-align: sub;
+	}
+
+	img.e {
+	  vertical-align: super;
+	}
+
+
+
+The CSS Text Alignment/Direction Properties
+	Property 	Description
+
+	direction 		-Specifies the text direction/writing direction
+	text-align 		-Specifies the horizontal alignment of text
+	text-align-last 	-Specifies how to align the last line of a text
+	unicode-bidi 		-Used together with the direction property to set or return whether the text should be overridden to 					support multiple languages in the same document
+	vertical-align 	-Sets the vertical alignment of an element
+	
+
+
+All CSS text-decoration Properties
+
+	Property 			Description
+	
+	text-decoration 		-Sets all the text-decoration properties in one declaration
+	text-decoration-color 		-Specifies the color of the text-decoration
+	text-decoration-line 		-Specifies the kind of text decoration to be used (underline, overline, etc.)
+	text-decoration-style 		-Specifies the style of the text decoration (solid, dotted, etc.)
+	text-decoration-thickness 	-Specifies the thickness of the text decoration line
+	
+	
+
+					Text Transformation
+
+The text-transform property is used to specify uppercase and lowercase letters in a text.
+
+It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
+
+Example
+	p.uppercase {
+	  text-transform: uppercase;
+	}
+
+	p.lowercase {
+	  text-transform: lowercase;
+	}
+
+	p.capitalize {
+	  text-transform: capitalize;
+	} 
+	
+	
+	
+The CSS Text Spacing Properties
+	Property 	Description
+	
+	letter-spacing 	-Specifies the space between characters in a text
+	line-height 		-Specifies the line height
+	text-indent 		-Specifies the indentation of the first line in a text-block
+	white-space 		-Specifies how to handle white-space inside an element
+	word-spacing 		-Specifies the space between words in a text
