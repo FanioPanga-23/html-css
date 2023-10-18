@@ -1,0 +1,33 @@
+					CSS overflow
+
+O que é overflowPropriedade especifica se deve recortar o conteúdo ou para adicionar barras de rolagem quando o conteúdo de um elemento é muito grande para caber no especificado Área.
+
+		A propriedade overflow tem os seguintes valores:
+
+    visible- O porm. O transbordamento não é cortado. O conteúdo é renderizado fora da caixa do 			elemento
+   
+    hidden- O transbordamento é cortado, e o resto do conteúdo será invisível
+   
+    scroll- O estouro é recorado e uma barra de rolagem é adicionada para ver o resto do 			conteúdo
+    
+    auto- Semelhante a scroll, mas ele adiciona barras de rolagem somente quando necessário
+    
+
+
+Nota: O overflowA propriedade só funciona para elementos de bloco com uma altura especificada.
+
+Observação: No OS X Lion (no Mac), as barras de rolagem são ocultadas por padrão e mostradas apenas quando usadas (mesmo que "overflow:scroll" esteja definido).    
+
+    
+
+Todas as Propriedades CSS Overflow
+
+Property 	Description
+
+overflow 	-Specifies what happens if content overflows an element's box
+
+overflow-wrap 	-Specifies whether or not the browser can break lines with long words, if they 			overflow its container
+
+overflow-x 	-Specifies what to do with the left/right edges of the content if it overflows 			the element's content area
+
+overflow-y 	-Specifies what to do with the top/bottom edges of the content if it overflows 			the element's content area

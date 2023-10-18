@@ -1,0 +1,17 @@
+				Responsive Table
+
+A responsive table will display a horizontal scroll bar if the screen is too small to display the full content
+				
+Add a container element (like <div>) with overflow-x:auto around the <table> element to make it responsive:
+
+Example:
+
+	<div style="overflow-x:auto;">
+
+	<table>
+	... table content ...
+	</table>
+
+	</div> 	
+	
+NOTE: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).
