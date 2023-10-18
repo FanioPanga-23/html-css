@@ -21,13 +21,14 @@ No entanto, recomendamos o uso de nomes de elementos minúsculo, porque:
     O Lowercase é mais fácil de escrever
 
 Bom:
-<body>
-<p>This is a paragraph.</p>
-</body>
+	<body>
+	<p>This is a paragraph.</p>
+	</body>
+	
 Ruim:
-<BODY>
-<P>This is a paragraph.</P>
-</BODY>
+	<BODY>
+	<P>This is a paragraph.</P>
+	</BODY>
 Fechar Todos os Elementos HTML
 
 Em HTML, você não precisa fechar todos os elementos (por exemplo, o <p>elemento).
