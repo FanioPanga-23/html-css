@@ -1,0 +1,62 @@
+				Combinadores de CSS
+
+Um combinador é algo que explica a relação entre os seletores.
+
+Um seletor CSS pode conter mais de um seletor simples. Entre o simples Seletores, nós podemos incluir um combinador.
+
+Existem quatro combinações diferentes em CSS:
+
+    Seletor de descendentes (espaço)
+    seletor de criança ()
+    Seletor adjacente do irmão (+)
+    Seletor de irmãos gerais ( ?)
+
+Seletor de Descendente
+
+O seletor descendente corresponde a todos os elementos que são descendentes de um Elemento.
+
+O exemplo a seguir seleciona todos os elementos ?p? dentro de ?div? elementos:
+
+Exemplo
+	
+	div p {
+	  background-color: yellow;
+	}
+
+Seletor de criança ()
+
+O seletor de criança seleciona todos os elementos que são os filhos de um elemento especificado.
+
+O exemplo a seguir seleciona todos os elementos ?p? crianças de um ?div? O elemento:
+
+Exemplo
+	
+	div > p {
+	  background-color: yellow;
+	}
+
+Seletor de irmãos adjacente (+)
+
+O seletor de irmãos adjacente é usado para selecionar um elemento diretamente após outro elemento específico.
+
+Os elementos irmãos devem ter o mesmo elemento pai, e "adjacente" significa "A seguir imediatamente".
+
+O exemplo a seguir seleciona o primeiro elemento ?p? que é colocado imediatamente após os elementos ?div?:
+
+Exemplo
+	
+	div + p {
+	  background-color: yellow;
+	}
+
+Selector de irmãos gerais (em inglês)
+
+O seletor geral de irmãos seleciona todos os elementos que são próximos irmãos de um elemento especificado.
+
+O exemplo a seguir seleciona todos os elementos ?p? que são irmãos a seguir de ?div? elementos:
+
+Exemplo
+	
+	div ~ p {
+	  background-color: yellow;
+	}

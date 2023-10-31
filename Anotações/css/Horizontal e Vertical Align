@@ -1,0 +1,178 @@
+				Layout CSS - Horizontal & Vertical Align
+
+Elementos do centro
+horizontalmente e verticalmente
+Elementos de alinhamento central
+
+Para centralizar horizontalmente um elemento de bloco (como ?div'), use margin: auto;
+
+Definir a largura do elemento impedirá que ele se estice para fora para o bordas do seu recipiente.
+
+O elemento irá então assumir a largura especificada, e o espaço restante Será dividido igualmente entre as duas margens:
+
+Este elemento div é centrado.
+
+Exemplo
+	
+	.center {
+	  margin: auto;
+	  width: 50%;
+	  border: 3px solid green;
+	  padding: 10px;
+	}
+
+Nota: O alinhamento central não tem efeito se o widthA propriedade não está definida (ou definido como 100%).
+Texto de alinhamento do centro
+
+Para apenas centralizar o texto dentro de um elemento, use text-align: center;
+
+Este texto está centrado.
+
+Exemplo
+	
+	.center {
+	  text-align: center;
+	  border: 3px solid green;
+	}
+
+Dica: Para mais exemplos sobre como alinhar o texto, consulte o capítulo CSS Text.
+Centro de uma imagem
+
+Para centralizar uma imagem, defina a margem esquerda e direita para autoE transformá-lo em um blockO elemento:
+Paris
+
+Exemplo
+	
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 40%;
+	}
+Esquerda e Direita Alinhar--Usando a posição
+
+Um método para alinhar elementos é usar position: absolute;:
+
+Nos meus anos mais jovens e mais vulneráveis, meu pai me deu alguns conselhos de que eu tenho virado em minha mente desde então.
+
+Exemplo
+	
+	.right {
+	  position: absolute;
+	  right: 0px;
+	  width: 300px;
+	  border: 3px solid #73AD21;
+	  padding: 10px;
+	}
+
+Nota: Os elementos posicionados com absolutos são removidos do fluxo normal e podem sobrepor-se aos elementos.
+Esquerda e Direita Alinhar - Usando o float
+
+Outro método para alinhar elementos é usar o floatpropriedade:
+
+Exemplo
+	
+	.right {
+	  float: right;
+	  width: 300px;
+	  border: 3px solid #73AD21;
+	  padding: 10px;
+	}
+O clearfix Hack
+
+Nota: Se um elemento é mais alto do que o elemento que o contém, e é flutuado, ele transbordar fora de seu recipiente. Você pode usar o "clearfix hack" para corrigir isso (veja o exemplo abaixo).
+Sem o Clearfix
+Com o Clearfix
+
+Então podemos adicionar o clearfix hack ao elemento que contém para corrigir Este problema é:
+
+Exemplo
+	
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+Centro Verticalmente - Usando o preenchimento
+
+Há muitas maneiras de centralizar um elemento verticalmente em CSS. Uma solução simples é usar o topo e o fundo padding:
+
+Estou verticalmente centrado.
+
+Exemplo
+	
+	.center {
+	  padding: 70px 0;
+	  border: 3px solid green;
+	}
+
+Para centralizar verticalmente e horizontalmente, use paddingE a text-align: center:
+
+Estou vertical e horizontalmente centralizado.
+
+Exemplo
+	
+	.center {
+	  padding: 70px 0;
+	  border: 3px solid green;
+	  text-align: center;
+	}
+Centro Verticalmente - Usando a altura da linha
+
+Outro truque é usar o line-heightPropriedade com um valor igual para o heightpropriedade:
+
+Estou vertical e horizontalmente centralizado.
+
+Exemplo
+	
+	.center {
+	  line-height: 200px;
+	  height: 200px;
+	  border: 3px solid green;
+	  text-align: center;
+	}
+
+/* If the text has multiple lines, add the following: */
+	.center p {
+	  line-height: 1.5;
+	  display: inline-block;
+	  vertical-align: middle;
+	}
+	
+Centro Verticalmente - Usando posição e transformação
+
+Se for paddingE a line-heightNão são opções, outra solução é usar o posicionamento e o transformpropriedade:
+
+Estou vertical e horizontalmente centralizado.
+
+Exemplo
+	
+	.center {
+	  height: 200px;
+	  position: relative;
+	  border: 3px solid green;
+	}
+
+	.center p {
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+
+Dica: Você aprenderá mais sobre a propriedade transformada em nossas Transformadas 2D - Capítulo.
+Centro vertical - Usando Flexbox
+
+Você também pode usar flexbox para centralizar as coisas. Basta observar que o flexbox não é suportado no IE10 e versões anteriores:
+Estou vertical e horizontalmente centralizado.
+
+Exemplo
+	
+	.center {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: 200px;
+	  border: 3px solid green;
+	} 

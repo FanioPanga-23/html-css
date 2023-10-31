@@ -1,0 +1,43 @@
+				CSS Layout - display: inline-block
+				
+A exposição: valor do bloco em linha
+
+Comparado com display: inline, o principal A diferença é que display: inline-blockpermite para definir uma largura e altura no elemento.
+
+Além disso, com display: inline-block, as margens superior e inferior/pagamentos são respeitados, Mas com o display: inline- Não são.
+
+Comparado com display: block, o principal A diferença é que display: inline-blockfaz não adicionar uma quebra de linha após o elemento, para que o elemento possa sentar-se ao lado de outros Elementos.
+
+O exemplo a seguir mostra o comportamento diferente de display: inline,, , - A , de frente para o que sobre o que sobre display: inline-blockE a display: block:
+
+Exemplo
+
+	span.a {
+	  display: inline; /* the default for span */
+	  width: 100px;
+	  height: 100px;
+	  padding: 5px;
+	  border: 1px solid blue;
+	  background-color: yellow;
+	}
+
+	span.b {
+	  display: inline-block;
+	  width: 100px;
+	  height: 100px;
+	  padding: 5px;
+	  border: 1px solid blue;
+	  background-color: yellow;
+	}
+
+	span.c {
+	  display: block;
+	  width: 100px;
+	  height: 100px;
+	  padding: 5px;
+	  border: 1px solid blue;
+	  background-color: yellow;
+	}
+Usando o bloco inline para criar links de navegação
+
+Um uso comum para display: inline-blocké para exibir itens de lista horizontalmente em vez de verticalmente. O seguinte Exemplo cria links de navegação horizontal:
