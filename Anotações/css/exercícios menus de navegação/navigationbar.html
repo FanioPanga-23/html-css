@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigationbar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul{
+            background-color: #000000de;
+            overflow: hidden;
+            list-style-type: none;
+        }
+
+        li{
+            float: left;
+            border-right: 1px solid #fff;
+        }
+
+        li:last-child{
+            border-right: none;
+        }
+
+        li a{
+            display: inline-block;
+            color: #fff;
+            padding: 17px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: #000000;
+        }
+
+        .active{
+            background-color: #15a31c;
+        }
+
+        #last{
+            float: right;
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="last"><a href="#">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

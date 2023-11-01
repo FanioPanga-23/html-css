@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        html,body{
+            transition-timing-function: ease;
+        }
+
+        ul{
+            overflow: hidden;
+            list-style-type: none;
+            background-color: #000000e8;
+        }
+
+        li{
+            border-bottom: 2px solid #4242428c;
+        }
+
+        li:last-child{
+            border-bottom: none;
+        }
+
+        li a{
+            display: block;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: #000;
+            transition-duration: 0.5s;
+        }
+
+        .active{
+            background-color: #14a81b;
+        }
+
+        main{
+            padding: 20px;
+        }
+
+        h1,p{
+            padding: 8px;
+        }
+
+        h1{
+            font-size: 1.4em;
+        }
+
+        @media screen and (min-width: 600px) {
+            li{
+                float: left;
+                border-bottom: none;
+            }
+
+            li a{
+                padding: 18px;
+            }
+
+            #last{
+                float: right;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li id="last"><a href="#">About</a></li>
+    </ul>
+
+    <main>
+        <h1>Responsive Topnav Example</h1>
+        <p>
+            This example use media queries to stack the topnav vertically when the screen size is 600px or less
+        </p>
+        <p>
+            You will learn more about media queries and responsive web design later in our CSS Yutorial.
+        </p>
+        <p>
+            <strong>Resize the browser window to see the effect.</strong>
+        </p>
+    </main>
+</body>
+</html>
