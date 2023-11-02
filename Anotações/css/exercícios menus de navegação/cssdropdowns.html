@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dropdown</title>
+    <style>
+        html,body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .dlist{
+            display: inline-block;
+        }
+
+        .ddrop{
+            display: none;
+        }
+
+        .adrop{
+            display: inline-block;
+            background-color: #2cb63f;
+            padding: 17px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .dlist:hover .ddrop{
+            display: block;
+            background-color: #e6e6e67e;
+            width: inherit;
+        }
+
+        .ddrop a{
+            display: block;
+            color: #000000;
+            text-decoration: none;
+            padding: 12px;
+        }
+
+        .ddrop a:hover{
+            background-color: #c0c0c073;
+        }
+
+        .dimg{
+            width: 200px;
+            background-color: #2cb63f;
+        }
+
+        .i1 img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+        <div class="dlist">
+            <a href="#" class="adrop">Dropdown Menu</a>
+            <div class="ddrop">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+</body>
+</html>

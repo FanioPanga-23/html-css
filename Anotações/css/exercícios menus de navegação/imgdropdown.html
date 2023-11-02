@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img Dropdown</title>
+    <style>
+        div.imghidd{
+            display: none;
+        }
+
+        div.princ{
+            display: inline-block;
+            position: relative;
+        }
+
+        .princ:hover .imghidd{
+            display: block;
+            position: absolute;
+            min-width: 200px;
+            padding: 0px;
+            text-align: center;
+            z-index: 1;
+            box-shadow: 2px 2px 5px #0000001a;
+        }
+
+        .dcontent{
+            margin-top: -4px;
+            padding: 10px;
+            background-color: #dbdbdb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dropdown Image</h1>
+    <p>
+        Move the mouse over the image below to open the dropdown content.
+    </p>
+    <div class="princ">
+        <img class="i1" src="img_5terre.jpg" alt="img_5terre" style="width: 110px; height: 60px;">
+
+        <div class="imghidd">
+
+            <img class="im2" src="img_5terre.jpg" alt="img_5terre" style="width: 300px;">
+            <div class="dcontent">Beautiful Cinque Terre.</div>
+        </div>
+    </div>
+</body>
+</html>
