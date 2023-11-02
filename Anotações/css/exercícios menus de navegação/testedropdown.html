@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul{
+            overflow: hidden;
+            list-style-type: none;
+            background-color: #000000dc;
+        }
+
+        li{
+            float: left;
+        }
+
+        li a{
+            display: inline-block;
+            padding: 18px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        li a:hover:not(.active,.ddrop a){
+            background-color: black;
+        }
+
+        .ddrop{
+            display: none;
+            background-color: #d1c9c9;
+            min-width: 120px;
+            position: absolute;
+        }
+
+        .ldrop:hover .ddrop{
+            display: block;
+        }
+
+        .ddrop a{
+            display: block;
+            color: #000;
+        }
+
+        .ddrop a:hover{
+            background-color: #0c910c;
+            color: #fff;
+        }
+
+        .active{
+            background-color: #0c910c;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li class="ldrop">
+            <a href="#">Contact</a>
+            <div class="ddrop">
+                <a href="#">948-251-470</a>
+                <a href="#">937-352-973</a>
+                <a href="#">939-624-201</a>
+                <a href="#">948-723-654</a>
+            </div>
+        </li>
+        <li style="float: right;">
+            <a href="#">About</a>
+        </li>
+    </ul>
+</body>
+</html>
