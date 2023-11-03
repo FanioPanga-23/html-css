@@ -1,0 +1,121 @@
+						Epritos de imagem CSS
+
+Um sprite de imagem é uma coleção de imagens colocadas em uma única imagem.
+
+Uma página da web com muitas imagens pode levar muito tempo para carregar e gerar Pedidos de servidor múltiplo.
+
+O uso de sprites de imagem reduzirá o número de solicitações do servidor e salvará de banda larga.
+Figuras de imagem - Exemplo simples
+
+Em vez de usar três imagens separadas, usamos esta única imagem ("img_navsprites.gif"):
+
+navigation images
+
+Com CSS, podemos mostrar apenas a parte da imagem que precisamos.
+
+No exemplo a seguir, o CSS especifica qual parte do "img_navsprites.gif" imagem para mostrar:
+
+Exemplo
+	
+	#home {
+	  width: 46px;
+	  height: 44px;
+	  background: url(img_navsprites.gif) 0 0;
+	}
+
+O exemplo explica:
+
+    <img id="home" src="img_trans.gif">- Apenas define uma pequena imagem transparente porque o atributo src não pode estar vazio. A imagem exibida será a imagem de fundo que especificamos em CSS
+    width: 46px; height: 44px;- Define a parte da imagem que queremos usar
+    background: url(img_navsprites.gif) 0 0;- Define a imagem de fundo e sua posição (esquerda 0px, top 0px)
+
+Esta é a maneira mais fácil de usar sprites de imagem, agora queremos expandi-lo usando links e efeitos de pairar.
+Image Sprites - Crie uma lista de navegação
+
+Queremos usar a imagem sprite ("img_navsprites.gif") para criar uma lista de navegação.
+
+Vamos usar uma lista HTML, porque ela pode ser um link e também suporta uma imagem de fundo:
+
+Exemplo
+	
+	#navlist {
+	  position: relative;
+	}
+
+	#navlist li {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	  position: absolute;
+	  top: 0;
+	}
+
+	#navlist li, #navlist a {
+	  height: 44px;
+	  display: block;
+	}
+
+	#home {
+	  left: 0px;
+	  width: 46px;
+	  background: url('img_navsprites.gif') 0 0;
+	}
+
+	#prev {
+	  left: 63px;
+	  width: 43px;
+	  background: url('img_navsprites.gif') -47px 0;
+	}
+
+	#next {
+	  left: 129px;
+	  width: 43px;
+	  background: url('img_navsprites.gif') -91px 0;
+	}
+
+O exemplo explica:
+
+    #navlist {position:relative;}- a posição é definida como em relação a permitir Posicionamento absoluto dentro dele
+    #navlist li {margin:0;padding:0;list-style:none;position:absolute;top:0;}- a margem e o preenchimento estão definidos como 0, estilo lista são removidos e todos os itens da lista estão posicionados de acordo absolutos
+    #navlist li, #navlist a {height:44px;display:block;}- a altura de todos As imagens são 44px
+
+Comece a posicionar e o estilo para cada peça específica:
+
+    #home {left:0px;width:46px;}- Posicionado até à esquerda, e A largura da imagem é 46px
+    #home {background:url(img_navsprites.gif) 0 0;}- É o que é. Define a imagem de fundo e sua posição (esquerda 0px, top 0px)
+    #prev {left:63px;width:43px;}- Posicionado 63px à direita (largura da casa 46px + algum espaço extra entre os itens), e a largura é 43px
+    #prev {background:url('img_navsprites.gif') -47px 0;}- Define o fundo imagem 47px à direita (lar de lar 46px + linha 1px divisórias)
+    #next {left:129px;width:43px;}- Posicionado 129px para o direito (início de ?prev é 63px + ?prev largura 43px + espaço extra), e a largura é 43px
+    #next {background:url('img_navsprites.gif') -91px 0;}- É o que é. Define a imagem de fundo 91px à direita (largura domiciliar 46px + 1px divisor de linha + ?prev largura 43px + divisor de linha de 1px)
+
+Espritos de imagem - Efeito de Pair
+
+Agora queremos adicionar um efeito de hover à nossa lista de navegação.
+
+Dica: O :hoverselector pode ser usado em todos os elementos, Não apenas nos links.
+
+Nossa nova imagem ("img_navsprites_hover.gif") contém três imagens de navegação e três imagens para usar para efeitos de pairar:
+
+navigation images
+
+Como esta é uma única imagem, e não seis arquivos separados, não haverá atraso de carregamento quando um usuário paira sobre a imagem.
+
+Nós só adicionamos três linhas de código para adicionar o efeito hover:
+
+Exemplo
+	
+	#home a:hover {
+	  background: url('img_navsprites_hover.gif') 0 -45px;
+	}
+
+	#prev a:hover {
+	  background: url('img_navsprites_hover.gif') -47px -45px;
+	}
+
+	#next a:hover {
+	  background: url('img_navsprites_hover.gif') -91px -45px;
+	}
+
+O exemplo explica:
+
+    #home a:hover {background: url('img_navsprites_hover.gif') 0 -45px;}- Para todas as três imagens do hover, especificamos a mesma posição de fundo, apenas 45px mais abaixo

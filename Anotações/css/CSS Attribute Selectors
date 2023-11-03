@@ -1,0 +1,30 @@
+All CSS Attribute Selectors
+
+Selector 		Example 		Example description
+
+[attribute] 		[target] 		Selects all elements with a target attribute
+[attribute=value] 	[target="_blank"] 	Selects all elements with target="_blank"
+[attribute~=value] 	[title~="flower"] 	Selects all elements with a title attribute that contains a space-separated list of words, 								one of which is "flower"
+[attribute|=value] 	[lang|="en"] 		Selects all elements with a lang attribute value starting with "en"
+[attribute^=value] 	a[href^="https"] 	Selects all <a> elements with a href attribute value starting with "https"
+[attribute$=value] 	a[href$=".pdf"] 	Selects all <a> elements with a href attribute value ending with ".pdf"
+[attribute*=value] 	a[href*="w3schools"] 	Selects all <a> elements with a href attribute value containing the substring "w3schools"
+
+						 Alguns Exemplos
+						 
+CSS [attribute] Selector:
+	
+	<style>
+	a[target] {
+	  background-color: yellow;
+	}
+	</style>
+	</head>
+	<body>
+
+	<h2>CSS [attribute] Selector</h2>
+	<p>The links with a target attribute gets a yellow background:</p>
+
+	<a href="https://www.w3schools.com">w3schools.com</a>
+	<a href="http://www.disney.com" target="_blank">disney.com</a>
+	<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
