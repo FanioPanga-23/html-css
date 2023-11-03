@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .gallery{
+            float: left;
+            margin: 5px 10px 5px 0px;
+            width: 100%;
+            border: 1px solid #00000021;
+        }
+
+        .gallery:hover{
+            border: 1px solid #00000056;
+            box-shadow: 0px 0px 7px #00000042;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .description{
+            text-align: center;
+            padding: 6px;
+        }
+
+        .paragrafos{
+            margin: 5px 0px;
+            padding: 15px;
+        }
+
+        .paragrafos::before{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (min-width: 500px){
+            .gallery{
+                width: 48%;
+            }
+        }
+
+        @media screen and (min-width: 700px) {
+            .gallery{
+                width: 23%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Responsive Image Gallery
+    </h1>
+
+    <p><strong>Resize the browser window to see effect.</strong></p>
+    
+        <div class="container">
+            <section class="gallery">
+                <a href="img_5terre.jpg" target="_blank">
+                    <img src="img_5terre.jpg" alt="5terre">
+                </a>
+                <div class="description">Add a description of the image here.</div>
+            </section>
+            <section class="gallery">
+                <a href="img_forest.jpg" target="_blank">
+                    <img src="img_forest.jpg" alt="forest">
+                </a>
+                <div class="description">Add a description of the image here.</div>
+            </section>
+            <section class="gallery">
+                <a href="img_lights.jpg" target="_blank">
+                    <img src="img_lights.jpg" alt="lights">
+                </a>
+                <div class="description">Add a description of the image here.</div>
+            </section>
+            <section class="gallery">
+               <a href="img_mountains.jpg" target="_blank">
+                    <img src="img_mountains.jpg" alt="mountains">
+                </a>
+                <div class="description">Add a description of the image here.</div>
+            </section>
+        </div>
+
+        <section class="paragrafos">
+            <p>
+                This example use media queries to re-arrange the images on different scree sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%)
+            </p>
+            <p>
+                You will learn more about media queries and responsive web design later in our CSS Tutorial.
+            </p>
+        </section>
+</body>
+</html>
