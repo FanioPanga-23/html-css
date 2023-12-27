@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: #9933cc;
+            color: #fff;
+            padding: 13px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li{
+            background-color: #33b5e5;
+            margin: 8px 2px;
+            padding: 7px;
+            color: #fff;
+        }
+
+        ul li:hover{
+            background-color: rgb(28, 126, 224);
+        }
+
+        main{padding: 12px;}
+
+        main section article h2{font-size: 1.7em;}
+
+        .direita{background-color: #33b5e5;}
+        
+        .direita section article{
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+        }
+
+        .direita section article h2{
+            font-size: 1.3em;
+        }
+
+        .direita section article p{font-size: 0.9em;}
+
+        footer{
+            background-color: rgb(30, 134, 238);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer p{font-size: 0.8em;}
+
+        @media only screen and (min-width: 768px){
+            .container{
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            .direita,.esquerda{flex: 25%;
+}
+            main{flex: 50%;}
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chania</h1>
+    </header>
+
+<div class="container">
+    <aside class="esquerda">
+        <ul>
+            <li>The Flight</li>
+            <li>The City</li>
+            <li>The Island</li>
+            <li>The Food</li>
+        </ul>
+    </aside>
+    
+        <main>
+            <section>
+                <article>
+                    <h2>The City</h2>
+                    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+                </article>
+            </section>
+        </main>
+    
+        <aside class="direita">
+            <section>
+                <article>
+                    <h2>What?</h2>
+                    <p>Chania is a city on the island of crete.</p>
+    
+                    <h2>Where?</h2>
+                    <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                    <h2>How</h2>
+                    <p>You can reach Chania airport from all over Europe.</p>
+                </article>
+            </section>
+        </aside>
+</div>
+
+    <footer>
+        <p>Resize the browser window to see how the content respond to the resizing</p>
+    </footer>
+</body>
+</html>
