@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	*{
+    	box-sizing: border-box;
+        font-family: arial;
+    }
+    
+    body{
+    	margin: 0;
+    }
+    
+    .type{
+    	background-color: yellow;
+        text-align: center;
+        padding: 25px;
+    }
+    
+    header{
+    	background-color: hsl(170,65%,45%);
+        padding: 40px;
+        text-align: center;
+    }
+    
+    header > h1,p{
+    	margin: 30px 5px;
+        color: #fff;
+    }
+    
+    menu{
+    	display: flex;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    	background-color: rgba(0,0,0,0.8);
+    }
+    
+    menu a{
+    	text-decoration: none;
+        text-align: center;
+        color: #fff;
+        padding: 14px 15px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    menu a:hover{
+    	background-color: lightgray;
+        color: #000;
+    }
+    
+    .container{
+    	display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .item{
+    	flex: 100%;
+    }
+    
+    section{
+    	margin: 8px;
+    }
+    
+    .aconchego{
+    	background-color: #f0f0f0;
+        padding: 10px;
+    }
+    
+    .aconchego p{color: black;}
+    
+    .imagem{
+    	background-color: rgba(0,0,0,0.3);
+        padding: 20px;
+        height: 200px;
+    }
+    
+    .smallmage{
+    	background-color: rgba(0,0,0,0.3);
+        padding: 18px;
+        margin: 13px 0;
+    }
+    
+    main{padding: 10px;}
+    
+    main p{color: #000;}
+
+	footer{
+    	margin: 0;
+        padding: 10px;
+    	text-align: center;
+        font-size: 1.5em;
+        background-color: rgba(0,0,0,0.1);
+    }
+    
+    @media only screen and (min-width: 700px){
+    	menu{
+        	flex-flow: row nowrap;
+        }
+    
+    	.container{
+        	flex-wrap: nowrap;
+        }
+        
+        .aconchego{
+        	flex: 40%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<aside class="type">
+	<strong>Resize the browser window to see the responsive effect.</strong>
+</aside>
+<header>
+	<h1>My Website</h1>
+    <p>With a <strong>flexible</strong> layout.</p>
+</header>
+
+<menu>
+	<a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+</menu>
+
+<div class="container">
+	<aside class="aconchego item">
+    	<article>
+            <section>
+                <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="imagem">Image</div>
+                <p>
+                  Some text about me in culpa qui officia deserunt mollit anim..
+                </p>
+            </section>
+            <section>
+            	<h2>More Text</h2>
+            	<p>Lorem ipsum dolor sit ame.</p>
+            	<div class="smallmage">Image</div>
+            	<div class="smallmage">Image</div>
+            	<div class="smallmage">Image</div>
+            </section>
+        </article>
+    </aside>
+    
+    <main class="item">
+    	<article>
+        	<section>
+            	<h2>TITLE HEADING</h2>
+                <p>
+                	<strong>Title description, Dec 7, 2017</strong>
+                </p>
+                <div class="imagem">Image</div>
+                <p>Some text..</p>
+                <p>
+                	Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+            </section>
+            
+            <section>
+            	<h2>TITLE HEADING</h2>
+                <p>
+                	<strong>Title description, Sep 2, 2017</strong>
+                </p>
+                <div class="imagem">Image</div>
+                <p>Some text..</p>
+                <p>
+                	Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+            </section>
+        </article>
+    </main>
+</div>
+
+<footer><h3>Footer</h3></footer>
+
+</body>
+</html>
